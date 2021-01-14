@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import testCupcake from "../../../assets/images/testCupcake.png";
+import Navigation from "../../../components/Navigation/Navigation";
 import Footer from "../../../components/Footer/Footer";
 
 class Home extends Component {
@@ -7,48 +8,7 @@ class Home extends Component {
         return (
             <div>
                 <header className="header">
-                    <nav className="main-nav">
-                        <i
-                            id="main-nav__responsive__toggle"
-                            className="fas fa-bars"
-                        ></i>
-                        <a className="main-nav__logo" href="/">
-                            <i className="fas fa-fan"> </i> Baked and Bubbly
-                            <i className="fas fa-fan"></i>
-                        </a>
-                        <div id="main-nav__link__container">
-                            <a className="main-nav__link" href="/">
-                                Home
-                            </a>
-                            <div className="dropdown-nav__container main-nav__link">
-                                <span>
-                                    <a href="/">Products</a>
-                                </span>
-                                <ul id="dropdown">
-                                    <li>
-                                        <a href="/products/cupcake">Cupcakes</a>
-                                    </li>
-                                    <li>
-                                        <a href="/products/pie">Pies</a>
-                                    </li>
-                                    <li>
-                                        <a href="/products/cookie">Cookies</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <a className="main-nav__link" href="/contact">
-                                Contact
-                            </a>
-                        </div>
-
-                        <a
-                            className="main-nav__cart"
-                            aria-label="Navigating Link"
-                            href="/cart"
-                        >
-                            <i className="fas fa-shopping-bag"></i>
-                        </a>
-                    </nav>
+                    <Navigation />
                     <div className="banner-container">
                         {/* <div id="responsive-nav" style="display: none">
                             <input
