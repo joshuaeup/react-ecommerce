@@ -20,13 +20,13 @@ const Navigation = () => {
                     </span>
                     <ul id="dropdown">
                         <li>
-                            <a href="/products/cupcake">Cupcakes</a>
+                            <Link to="/products/cupcake">Cupcakes</Link>
                         </li>
                         <li>
-                            <a href="/products/pie">Pies</a>
+                            <Link to="/products/pie">Pies</Link>
                         </li>
                         <li>
-                            <a href="/products/cookie">Cookies</a>
+                            <Link to="/products/cookie">Cookies</Link>
                         </li>
                     </ul>
                 </div>

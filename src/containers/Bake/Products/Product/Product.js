@@ -5,6 +5,12 @@ import Footer from "../../../../components/Footer/Footer";
 
 class Product extends Component {
     componentDidMount() {}
+
+    handleSubmit = () => {
+        console.log("PRODUCT.JS", this.props.product);
+        this.props.addToCart(this.props.product);
+    };
+
     render() {
         return (
             <Aux>
@@ -139,7 +145,10 @@ class Product extends Component {
                                 </div>
                             </div>
                             <div className="cart-add__container">
-                                <button className="cart-add__btn">
+                                <button
+                                    className="cart-add__btn"
+                                    onClick={this.handleSubmit}
+                                >
                                     Add To Cart
                                 </button>
                             </div>

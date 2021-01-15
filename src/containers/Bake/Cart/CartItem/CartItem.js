@@ -14,7 +14,7 @@ const CartItem = (props) => {
                 <div className="cart-desc__container">
                     <div className="cart-desc">
                         <h3 className="cart-desc__container__body">
-                            {props.type}
+                            {props.name} {props.type}
                         </h3>
                     </div>
                     <div className="cart-desc">

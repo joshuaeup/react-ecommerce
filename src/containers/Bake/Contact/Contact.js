@@ -26,7 +26,7 @@ class Contact extends Component {
                             <div className="input-container">
                                 <label
                                     className="input-container__label"
-                                    for="fname"
+                                    htmlFor="fname"
                                 >
                                     First Name
                                 </label>
@@ -40,7 +40,7 @@ class Contact extends Component {
                             <div className="input-container">
                                 <label
                                     className="input-container__label"
-                                    for="lname"
+                                    htmlFor="lname"
                                 >
                                     Last Name
                                 </label>
@@ -54,7 +54,7 @@ class Contact extends Component {
                             <div className="input-container">
                                 <label
                                     className="input-container__label"
-                                    for="email"
+                                    htmlFor="email"
                                 >
                                     Email
                                 </label>
@@ -68,7 +68,7 @@ class Contact extends Component {
                             <div className="input-container">
                                 <label
                                     className="input-container__label"
-                                    for="number"
+                                    htmlFor="number"
                                 >
                                     Phone #
                                 </label>
@@ -82,7 +82,7 @@ class Contact extends Component {
                             <div className="input-container">
                                 <label
                                     className="input-container__label"
-                                    for="comment"
+                                    htmlFor="comment"
                                 >
                                     What's on your mind?
                                 </label>

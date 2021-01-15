@@ -10,9 +10,12 @@ import Products from "./Products/Products";
 import Product from "./Products/Product/Product";
 import data from "../../data.json";
 
+const sweets = [...data.cupcake, ...data.cookie, ...data.pie];
+
 class Bake extends Component {
     state = {
-        data: [...data.cupcake, ...data.cookie, ...data.pie],
+        data: sweets,
+        cart: [],
     };
 
     // Method to find category and use param to find type
@@ -54,6 +57,16 @@ class Bake extends Component {
         return product;
     };
 
+    addToCart = (newItem) => {
+        // Create copy of cart array
+        let cartCopy = [...this.state.cart, newItem];
+
+        // Set cart state to copy
+        this.setState({
+            cart: cartCopy,
+        });
+    };
+
     // Method to capitalize words
     capitalize = (word) => {
         return word.charAt(0).toUpperCase() + word.slice(1);
@@ -65,7 +78,16 @@ class Bake extends Component {
                 {/* Route used to specify what to render at each path */}
                 <Route path="/" exact component={Home} />
                 <Route path="/contact" exact component={Contact} />
-                <Route path="/cart" exact component={Cart} />
+                <Route
+                    path="/cart"
+                    exact
+                    render={() => (
+                        <Cart
+                            capitalize={this.capitalize}
+                            items={this.state.cart}
+                        />
+                    )}
+                />
                 <Route
                     path="/products"
                     exact
@@ -91,6 +113,7 @@ class Bake extends Component {
                                 props.match.params.name
                             )}
                             capitalize={this.capitalize}
+                            addToCart={this.addToCart}
                         />
                     )}
                 />
