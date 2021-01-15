@@ -260,7 +260,7 @@
   background-color: #ffffff;
   display: grid;
   grid-template-columns: 1fr;
-  z-index: 2;
+  z-index: 5;
   width: 100%;
   text-align: center;
   height: 3rem;

@@ -3,7 +3,7 @@
         {
             "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
             "type": "cupcake",
-            "name": "Strawberry",
+            "name": "strawberry",
             "reviews": 18,
             "ratings": [
                 {
@@ -27,7 +27,7 @@
         {
             "image": "https://prismic-io.s3.amazonaws.com/lesbonneschoses/bf6819a34ff187c5a59d781351a91834c92b7ebf.png",
             "type": "cupcake",
-            "name": "Chocolate",
+            "name": "chocolate",
             "reviews": 18,
             "ratings": [
                 {
@@ -51,7 +51,7 @@
         {
             "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
             "type": "cupcake",
-            "name": "Strawberry",
+            "name": "strawberry",
             "reviews": 18,
             "ratings": [
                 {
@@ -75,7 +75,7 @@
         {
             "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
             "type": "cupcake",
-            "name": "Strawberry",
+            "name": "strawberry",
             "reviews": 18,
             "ratings": [
                 {
@@ -99,7 +99,7 @@
         {
             "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
             "type": "cupcake",
-            "name": "Strawberry",
+            "name": "strawberry",
             "reviews": 18,
             "ratings": [
                 {
@@ -123,7 +123,7 @@
         {
             "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
             "type": "cupcake",
-            "name": "Strawberry",
+            "name": "strawberry",
             "reviews": 18,
             "ratings": [
                 {
@@ -147,7 +147,31 @@
         {
             "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
             "type": "cupcake",
-            "name": "Strawberry",
+            "name": "strawberry",
+            "reviews": 19,
+            "ratings": [
+                {
+                    "one": 0
+                },
+                {
+                    "two": 0
+                },
+                {
+                    "three": 0
+                },
+                {
+                    "four": 0
+                },
+                {
+                    "five": 2
+                }
+            ],
+            "price": 20.01
+        },
+        {
+            "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
+            "type": "cupcake",
+            "name": "strawberry",
             "reviews": 18,
             "ratings": [
                 {
@@ -171,7 +195,7 @@
         {
             "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
             "type": "cupcake",
-            "name": "Strawberry",
+            "name": "strawberry",
             "reviews": 18,
             "ratings": [
                 {
@@ -195,31 +219,7 @@
         {
             "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
             "type": "cupcake",
-            "name": "Strawberry",
-            "reviews": 18,
-            "ratings": [
-                {
-                    "one": 0
-                },
-                {
-                    "two": 0
-                },
-                {
-                    "three": 0
-                },
-                {
-                    "four": 0
-                },
-                {
-                    "five": 2
-                }
-            ],
-            "price": 20.01
-        },
-        {
-            "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
-            "type": "cupcake",
-            "name": "Strawberry",
+            "name": "strawberry",
             "reviews": 18,
             "ratings": [
                 {
@@ -245,7 +245,7 @@
         {
             "image": "https://library.kissclipart.com/20180922/are/kissclipart-pumpkin-pie-png-clipart-pumpkin-pie-clip-art-688581ae068a4a07.png",
             "type": "pie",
-            "name": "Peach",
+            "name": "peach",
             "reviews": 18,
             "ratings": [
                 {
@@ -269,7 +269,7 @@
         {
             "image": "https://library.kissclipart.com/20180922/are/kissclipart-pumpkin-pie-png-clipart-pumpkin-pie-clip-art-688581ae068a4a07.png",
             "type": "pie",
-            "name": "Apple",
+            "name": "apple",
             "reviews": 18,
             "ratings": [
                 {
@@ -293,7 +293,7 @@
         {
             "image": "https://library.kissclipart.com/20180922/are/kissclipart-pumpkin-pie-png-clipart-pumpkin-pie-clip-art-688581ae068a4a07.png",
             "type": "pie",
-            "name": "Key Lime",
+            "name": "keylime",
             "reviews": 18,
             "ratings": [
                 {
@@ -317,7 +317,7 @@
         {
             "image": "https://library.kissclipart.com/20180922/are/kissclipart-pumpkin-pie-png-clipart-pumpkin-pie-clip-art-688581ae068a4a07.png",
             "type": "pie",
-            "name": "Pumpkin",
+            "name": "pumpkin",
             "reviews": 18,
             "ratings": [
                 {
@@ -341,9 +341,9 @@
     ],
     "cookie": [
         {
-            "image": "https://lh3.googleusercontent.com/proxy/Fpv1YWHD1oJqf_UyEbimoosM-bjrXoTkD2qsGQ8igm_qWAwERzjxyEozuhSo2TEeZS20YFlCdgZZepdyvRieVL_IpiFYG0JRIL0XaC1PL2lSuVJzvvAhvfx9QjCO90dI",
+            "image": "https://lh3.googleusercontent.com/proxy/cppF8kAhZGzUWDHexF5vZG3Fx8-yi7vv7kouaDcR8iPMLETAY-RXqB4ifa_JQVfz48cmFJKo1MuMgP5ipz-3hyMq31FrQeIZnIOOVSeoD5qaFmFN8W0AlQXgVSx7CTuc",
             "type": "cookie",
-            "name": "Chocolate",
+            "name": "chocolate",
             "reviews": 18,
             "ratings": [
                 {
@@ -365,10 +365,10 @@
             "price": 20.01
         },
         {
-            "image": "https://lh3.googleusercontent.com/proxy/Fpv1YWHD1oJqf_UyEbimoosM-bjrXoTkD2qsGQ8igm_qWAwERzjxyEozuhSo2TEeZS20YFlCdgZZepdyvRieVL_IpiFYG0JRIL0XaC1PL2lSuVJzvvAhvfx9QjCO90dI",
+            "image": "https://lh3.googleusercontent.com/proxy/cppF8kAhZGzUWDHexF5vZG3Fx8-yi7vv7kouaDcR8iPMLETAY-RXqB4ifa_JQVfz48cmFJKo1MuMgP5ipz-3hyMq31FrQeIZnIOOVSeoD5qaFmFN8W0AlQXgVSx7CTuc",
             "type": "cookie",
-            "name": "Oreo",
-            "reviews": 18,
+            "name": "oreo",
+            "reviews": 19,
             "ratings": [
                 {
                     "one": 0
