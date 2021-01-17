@@ -11,6 +11,7 @@ const CartItems = (props) => {
                         key={item.name + index}
                         image={item.image}
                         name={props.capitalize(item.name)}
+                        configurations={props.configurations[index]}
                         type={props.capitalize(item.type)}
                         price={item.price}
                     />

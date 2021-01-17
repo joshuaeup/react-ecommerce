@@ -225,7 +225,7 @@ class Home extends Component {
                             </p>
                         </article>
                     </div>
-                    <div className="social-grid-container">
+                    {/* <div className="social-grid-container">
                         <h2 className="social-grid-container__title">
                             Check us out online
                         </h2>
@@ -299,7 +299,7 @@ class Home extends Component {
                                 alt="cupcake"
                             />
                         </article>
-                    </div>
+                    </div> */}
                 </main>
                 <Footer />
             </div>

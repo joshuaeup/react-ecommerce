@@ -16,6 +16,23 @@ const CartItem = (props) => {
                         <h3 className="cart-desc__container__body">
                             {props.name} {props.type}
                         </h3>
+                        <h4 className="cart-desc__container__body__customize__title">
+                            Customizations
+                        </h4>
+                        <ul>
+                            <li className="cart-desc__container__body__config">
+                                Icing Flavor:{" "}
+                                {props.configurations.option0.slice(0, -1)}
+                            </li>
+                            <li className="cart-desc__container__body__config">
+                                Collection Size:{" "}
+                                {props.configurations.option1.slice(0, -1)}
+                            </li>
+                            <li className="cart-desc__container__body__config">
+                                Filling Flavor:{" "}
+                                {props.configurations.option2.slice(0, -1)}
+                            </li>
+                        </ul>
                     </div>
                     <div className="cart-desc">
                         <select
@@ -31,7 +48,7 @@ const CartItem = (props) => {
                     </div>
                     <div className="cart-desc">
                         <h3 className="cart-desc__container__body">
-                            {props.price}
+                            ${props.price}
                         </h3>
                         <button className="cart-desc__container__btn">
                             Remove

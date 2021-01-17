@@ -16,6 +16,7 @@ class Bake extends Component {
     state = {
         data: sweets,
         cart: [],
+        configurations: [],
     };
 
     // Method to find category and use param to find type
@@ -57,14 +58,22 @@ class Bake extends Component {
         return product;
     };
 
-    addToCart = (newItem) => {
+    addToCart = (newItem, config) => {
         // Create copy of cart array
         let cartCopy = [...this.state.cart, newItem];
+        let configCopy = [...this.state.configurations, config];
 
         // Set cart state to copy
-        this.setState({
-            cart: cartCopy,
-        });
+        this.setState(
+            {
+                cart: cartCopy,
+                configurations: configCopy,
+            },
+            () => {
+                console.log("[BAKE] ", this.state.cart);
+                console.log("[BAKE CONFIG] ", this.state.configurations);
+            }
+        );
     };
 
     // Method to capitalize words
@@ -85,6 +94,7 @@ class Bake extends Component {
                         <Cart
                             capitalize={this.capitalize}
                             items={this.state.cart}
+                            configurations={this.state.configurations}
                         />
                     )}
                 />

@@ -2,13 +2,15 @@ import React, { Component } from "react";
 import Aux from "../../../../hoc/Aux/Aux";
 import Navigation from "../../../../components/Navigation/Navigation";
 import Footer from "../../../../components/Footer/Footer";
+import Customizations from "../../../../components/Customizations/Customizations";
 
 class Product extends Component {
     componentDidMount() {}
 
-    handleSubmit = () => {
+    handleSubmit = (config) => {
         console.log("PRODUCT.JS", this.props.product);
-        this.props.addToCart(this.props.product);
+        // console.log("CONFIG", config);
+        this.props.addToCart(this.props.product, config);
     };
 
     render() {
@@ -73,85 +75,7 @@ class Product extends Component {
                                     Customize Your Dessert!
                                 </h2>
                             </div>
-                            <div className="input-radio__container">
-                                <h2 className="input-radio__title">
-                                    Choose your flavor
-                                </h2>
-                                <div className="input-radio">
-                                    <span className="text__wrapper">
-                                        <span className="text">Name</span>
-                                        <span className="text">Other Info</span>
-                                    </span>
-                                </div>
-                                <div className="input-radio">
-                                    <span className="text__wrapper">
-                                        <span className="text">Name</span>
-                                        <span className="text">Other Info</span>
-                                    </span>
-                                </div>
-                            </div>
-                            <hr className="divideLine" />
-                            <div className="input-radio__container">
-                                <h2 className="input-radio__title">
-                                    Choose your flavor
-                                </h2>
-                                <div className="input-radio">
-                                    <span className="text__wrapper">
-                                        <span className="text">Name</span>
-                                        <span className="text">Other Info</span>
-                                    </span>
-                                </div>
-                                <div className="input-radio">
-                                    <span className="text__wrapper">
-                                        <span className="text">Name</span>
-                                        <span className="text">Other Info</span>
-                                    </span>
-                                </div>
-                            </div>
-                            <hr className="divideLine" />
-                            <div className="input-radio__container">
-                                <h2 className="input-radio__title">
-                                    Choose your flavor
-                                </h2>
-                                <div className="input-radio">
-                                    <span className="text__wrapper">
-                                        <span className="text">Name</span>
-                                        <span className="text">Other Info</span>
-                                    </span>
-                                </div>
-                                <div className="input-radio">
-                                    <span className="text__wrapper">
-                                        <span className="text">Name</span>
-                                        <span className="text">Other Info</span>
-                                    </span>
-                                </div>
-                            </div>
-                            <hr className="divideLine" />
-                            <div className="input-radio__container">
-                                <h2 className="input-radio__title">
-                                    Choose your flavor
-                                </h2>
-                                <div className="input-radio">
-                                    <span className="text__wrapper">
-                                        <span className="text">Name</span>
-                                        <span className="text">Other Info</span>
-                                    </span>
-                                </div>
-                                <div className="input-radio">
-                                    <span className="text__wrapper">
-                                        <span className="text">Name</span>
-                                        <span className="text">Other Info</span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div className="cart-add__container">
-                                <button
-                                    className="cart-add__btn"
-                                    onClick={this.handleSubmit}
-                                >
-                                    Add To Cart
-                                </button>
-                            </div>
+                            <Customizations submit={this.handleSubmit} />
                         </div>
                     </div>
                 </main>
