@@ -14,6 +14,8 @@ const CartItems = (props) => {
                         configurations={props.configurations[index]}
                         type={props.capitalize(item.type)}
                         price={item.price}
+                        index={index}
+                        removeFromCart={props.removeFromCart}
                     />
                 );
             })}

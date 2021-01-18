@@ -79,12 +79,17 @@ class Bake extends Component {
         );
     };
 
-    // topSellers = () => {
-    //     const top5 = this.state.data.find((element) => {
-    //         return element.ratings[4].five > 3;
-    //     });
-    //     return top5;
-    // };
+    removeFromCart = (index) => {
+        let cartCopy = [...this.state.cart];
+
+        console.log("[INDEX]:", index);
+
+        cartCopy.splice(index, 1);
+
+        this.setState({
+            cart: cartCopy,
+        });
+    };
 
     // Method to capitalize words
     capitalize = (word) => {
@@ -114,6 +119,7 @@ class Bake extends Component {
                             capitalize={this.capitalize}
                             items={this.state.cart}
                             configurations={this.state.configurations}
+                            removeFromCart={this.removeFromCart}
                         />
                     )}
                 />

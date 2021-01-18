@@ -10,36 +10,6 @@ class Cart extends Component {
         super(props);
 
         this.state = {
-            // items: [
-            //     {
-            //         image:
-            //             "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
-            //         name: "strawberry",
-            //         type: "cupcake",
-            //         price: 20.01,
-            //     },
-            //     {
-            //         image:
-            //             "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
-            //         name: "strawberry",
-            //         type: "cupcake",
-            //         price: 20.01,
-            //     },
-            //     {
-            //         image:
-            //             "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
-            //         name: "strawberry",
-            //         type: "cupcake",
-            //         price: 20.01,
-            //     },
-            //     {
-            //         image:
-            //             "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
-            //         name: "strawberry",
-            //         type: "cupcake",
-            //         price: 20.01,
-            //     },
-            // ],
             total: null,
         };
     }
@@ -108,6 +78,7 @@ class Cart extends Component {
                             items={this.props.items}
                             configurations={this.props.configurations}
                             capitalize={this.props.capitalize}
+                            removeFromCart={this.props.removeFromCart}
                         />
                         <hr className="divideLine" />
                         <CartSummary price={total} totalPrice={total} />

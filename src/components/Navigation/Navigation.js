@@ -19,15 +19,16 @@ const Navigation = () => {
                         </Link>
                     </span>
                     <ul id="dropdown">
-                        <li>
-                            <Link to="/products/cupcake">Cupcakes</Link>
-                        </li>
-                        <li>
-                            <Link to="/products/pie">Pies</Link>
-                        </li>
-                        <li>
-                            <Link to="/products/cookie">Cookies</Link>
-                        </li>
+                        <Link to="/products/cupcake">
+                            <li>Cupcakes</li>
+                        </Link>
+                        <Link to="/products/pie">
+                            <li>Pies</li>
+                        </Link>
+
+                        <Link to="/products/cookie">
+                            <li>Cookies</li>
+                        </Link>
                     </ul>
                 </div>
                 <Link className="main-nav__link" to="/contact">

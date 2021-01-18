@@ -794,17 +794,17 @@
 
 .cart-desc__container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-around;
   align-items: center;
 }
 .cart-desc__container .cart-desc:nth-child(2) {
   justify-self: center;
 }
-.cart-desc__container .cart-desc:nth-child(3) {
+.cart-desc__container .cart-desc:nth-child(2) {
   justify-self: end;
 }
-.cart-desc__container .cart-desc:nth-child(3) .cart-desc__container__body {
+.cart-desc__container .cart-desc:nth-child(2) .cart-desc__container__body {
   margin-bottom: 1rem;
 }
 .cart-desc__container .cart-desc {
