@@ -772,24 +772,69 @@
   padding: 0 3rem;
 }
 
-.cart-dual-grid {
+.cart-dual-grid,
+.cart-preview-dual-grid {
   display: grid;
   grid-template-columns: 1fr 5fr;
   grid-auto-rows: min-content;
   height: 100%;
   margin-bottom: 4rem;
 }
-.cart-dual-grid .cart-dual-column {
+.cart-dual-grid .cart-dual-column,
+.cart-preview-dual-grid .cart-dual-column {
   height: 20vh;
   display: grid;
   align-content: center;
 }
-.cart-dual-grid .cart-dual-column .cart-image-container {
+.cart-dual-grid .cart-dual-column .cart-image-container,
+.cart-preview-dual-grid .cart-dual-column .cart-image-container {
   height: 20vh;
 }
-.cart-dual-grid .cart-dual-column .cart-image-container .cart-image {
+.cart-dual-grid .cart-dual-column .cart-image-container .cart-image,
+.cart-preview-dual-grid .cart-dual-column .cart-image-container .cart-image {
   height: 100%;
   width: auto;
+}
+
+.cart-preview-dual-grid {
+  padding: 5rem;
+  grid-template-columns: 1fr 2fr 5fr;
+}
+.cart-preview-dual-grid .cart-dual-column {
+  height: auto;
+  justify-content: center;
+  align-content: center;
+}
+.cart-preview-dual-grid .cart-dual-column .cart-image-container {
+  height: 15vh;
+}
+.cart-preview-dual-grid .cart-dual-column .cart-desc__container .cart-desc {
+  align-content: center;
+}
+.cart-preview-dual-grid .cart-dual-column .cart-desc__container .cart-desc .cart-desc__container__body {
+  margin: auto;
+}
+.cart-preview-dual-grid .cart-dual-column .cart-desc__container__links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+}
+.cart-preview-dual-grid .cart-dual-column .cart-desc__container__links .checkout-btn {
+  justify-self: start;
+  width: 80%;
+}
+.cart-preview-dual-grid .cart-dual-column .cart-desc__container__links .checkout-btn a {
+  text-decoration: none;
+  color: white;
+}
+.cart-preview-dual-grid .cart-dual-column:nth-child(1) {
+  grid-template-columns: 1fr;
+  justify-self: center;
+}
+.cart-preview-dual-grid .cart-dual-column:nth-child(2) .cart-desc__container {
+  grid-template-columns: 1fr;
+  justify-self: center;
 }
 
 .cart-desc__container {
@@ -856,7 +901,8 @@
 .cart-total__container .cart-total__container__row h3 {
   margin: 0;
 }
-.cart-total__container .checkout-btn {
+
+.checkout-btn {
   margin-top: 2rem;
   margin-bottom: 1rem;
   padding: 0.8rem 0;

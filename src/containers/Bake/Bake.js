@@ -8,6 +8,8 @@ import Contact from "./Contact/Contact";
 import Cart from "./Cart/Cart";
 import Products from "./Products/Products";
 import Product from "./Products/Product/Product";
+import ProductReview from "./Products/ProductReview/ProductReview";
+// Data
 import data from "../../data.json";
 import topSellers from "../../topSellers.json";
 
@@ -80,12 +82,11 @@ class Bake extends Component {
     };
 
     removeFromCart = (index) => {
+        // Create copy of cart array
         let cartCopy = [...this.state.cart];
-
-        console.log("[INDEX]:", index);
-
+        // Remove item at index passed from cart component
         cartCopy.splice(index, 1);
-
+        // Set cart state to copy
         this.setState({
             cart: cartCopy,
         });
@@ -120,6 +121,19 @@ class Bake extends Component {
                             items={this.state.cart}
                             configurations={this.state.configurations}
                             removeFromCart={this.removeFromCart}
+                        />
+                    )}
+                />
+                <Route
+                    path="/products/:type/:name/review"
+                    exact
+                    render={(props) => (
+                        <ProductReview
+                            capitalize={this.capitalize}
+                            product={this.findProduct(
+                                props.match.params.type,
+                                props.match.params.name
+                            )}
                         />
                     )}
                 />

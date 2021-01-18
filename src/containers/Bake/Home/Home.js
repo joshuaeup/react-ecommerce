@@ -62,7 +62,7 @@ class Home extends Component {
 
                         {/* <button id="view-more-btn">View More</button> */}
                         <Link to="/products">
-                            <button className="home-btn">View More</button>
+                            <button className="checkout-btn">View More</button>
                         </Link>
                     </div>
                     <div className="info-grid-container">

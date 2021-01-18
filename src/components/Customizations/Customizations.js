@@ -42,6 +42,8 @@ class Customizations extends Component {
     };
 
     render() {
+        const route =
+            "/products/" + this.props.type + "/" + this.props.name + "/review";
         return (
             <Aux>
                 {customizations.map((custom, index) => {
@@ -56,7 +58,7 @@ class Customizations extends Component {
                 })}
                 <hr className="divideLine" />
                 <div className="cart-add__container">
-                    <Link to="/cart">
+                    <Link to={route}>
                         <button
                             className="cart-add__btn"
                             onClick={() => this.props.submit(this.state)}

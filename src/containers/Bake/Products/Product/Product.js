@@ -11,7 +11,6 @@ class Product extends Component {
 
     handleSubmit = (config) => {
         console.log("PRODUCT.JS", this.props.product);
-        // console.log("CONFIG", config);
         this.props.addToCart(this.props.product, config);
     };
 
@@ -77,7 +76,11 @@ class Product extends Component {
                                     Customize Your Dessert!
                                 </h2>
                             </div>
-                            <Customizations submit={this.handleSubmit} />
+                            <Customizations
+                                type={this.props.product.type}
+                                name={this.props.product.name}
+                                submit={this.handleSubmit}
+                            />
                         </div>
                     </div>
                 </main>
