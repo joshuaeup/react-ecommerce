@@ -5,7 +5,9 @@ import Footer from "../../../../components/Footer/Footer";
 import Customizations from "../../../../components/Customizations/Customizations";
 
 class Product extends Component {
-    componentDidMount() {}
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
 
     handleSubmit = (config) => {
         console.log("PRODUCT.JS", this.props.product);

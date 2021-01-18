@@ -9,12 +9,15 @@ import Cart from "./Cart/Cart";
 import Products from "./Products/Products";
 import Product from "./Products/Product/Product";
 import data from "../../data.json";
+import topSellers from "../../topSellers.json";
 
 const sweets = [...data.cupcake, ...data.cookie, ...data.pie];
+const topSellingSweets = [...topSellers.topSellers];
 
 class Bake extends Component {
     state = {
         data: sweets,
+        topSellers: topSellingSweets,
         cart: [],
         configurations: [],
     };
@@ -76,6 +79,13 @@ class Bake extends Component {
         );
     };
 
+    // topSellers = () => {
+    //     const top5 = this.state.data.find((element) => {
+    //         return element.ratings[4].five > 3;
+    //     });
+    //     return top5;
+    // };
+
     // Method to capitalize words
     capitalize = (word) => {
         return word.charAt(0).toUpperCase() + word.slice(1);
@@ -85,7 +95,16 @@ class Bake extends Component {
         return (
             <Aux>
                 {/* Route used to specify what to render at each path */}
-                <Route path="/" exact component={Home} />
+                <Route
+                    path="/"
+                    exact
+                    render={() => (
+                        <Home
+                            capitalize={this.capitalize}
+                            data={this.state.topSellers}
+                        />
+                    )}
+                />
                 <Route path="/contact" exact component={Contact} />
                 <Route
                     path="/cart"

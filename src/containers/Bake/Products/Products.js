@@ -5,7 +5,9 @@ import ProductsComponent from "../../../components/Products/Products";
 import Footer from "../../../components/Footer/Footer";
 
 class Products extends Component {
-    componentDidMount() {}
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
 
     render() {
         // console.log(this.props.data.map);

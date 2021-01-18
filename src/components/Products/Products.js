@@ -28,7 +28,7 @@ class Products extends Component {
                             <div className="product-grid-item">
                                 <p>{capitalize(this.props.name)}</p>
                             </div>
-                            <div className="product-grid-item">
+                            {/* <div className="product-grid-item">
                                 <span>
                                     <i className="fas fa-star star-icon"></i>
                                     <i className="fas fa-star star-icon"></i>
@@ -37,7 +37,7 @@ class Products extends Component {
                                     <i className="fas fa-star star-icon"></i>{" "}
                                     {this.props.reviews}
                                 </span>
-                            </div>
+                            </div> */}
                             <div className="product-grid-item">
                                 <span className="grid-price">
                                     {this.props.price}

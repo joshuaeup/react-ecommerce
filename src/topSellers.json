@@ -1,0 +1,124 @@
+{
+    "topSellers": [
+        {
+            "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
+            "type": "cupcake",
+            "name": "strawberry",
+            "reviews": 18,
+            "ratings": [
+                {
+                    "one": 0
+                },
+                {
+                    "two": 0
+                },
+                {
+                    "three": 0
+                },
+                {
+                    "four": 0
+                },
+                {
+                    "five": 4
+                }
+            ],
+            "price": 20.01
+        },
+        {
+            "image": "https://prismic-io.s3.amazonaws.com/lesbonneschoses/bf6819a34ff187c5a59d781351a91834c92b7ebf.png",
+            "type": "cupcake",
+            "name": "chocolate",
+            "reviews": 18,
+            "ratings": [
+                {
+                    "one": 0
+                },
+                {
+                    "two": 0
+                },
+                {
+                    "three": 0
+                },
+                {
+                    "four": 0
+                },
+                {
+                    "five": 5
+                }
+            ],
+            "price": 20.01
+        },
+        {
+            "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
+            "type": "cupcake",
+            "name": "strawberry",
+            "reviews": 18,
+            "ratings": [
+                {
+                    "one": 0
+                },
+                {
+                    "two": 0
+                },
+                {
+                    "three": 0
+                },
+                {
+                    "four": 0
+                },
+                {
+                    "five": 6
+                }
+            ],
+            "price": 20.01
+        },
+        {
+            "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
+            "type": "cupcake",
+            "name": "strawberry",
+            "reviews": 18,
+            "ratings": [
+                {
+                    "one": 0
+                },
+                {
+                    "two": 0
+                },
+                {
+                    "three": 0
+                },
+                {
+                    "four": 0
+                },
+                {
+                    "five": 7
+                }
+            ],
+            "price": 20.01
+        },
+        {
+            "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
+            "type": "cupcake",
+            "name": "strawberry",
+            "reviews": 18,
+            "ratings": [
+                {
+                    "one": 0
+                },
+                {
+                    "two": 0
+                },
+                {
+                    "three": 0
+                },
+                {
+                    "four": 0
+                },
+                {
+                    "five": 8
+                }
+            ],
+            "price": 20.01
+        }
+    ]
+}

@@ -1,43 +1,19 @@
 import React, { Component } from "react";
-import testCupcake from "../../../assets/images/testCupcake.png";
 import Navigation from "../../../components/Navigation/Navigation";
 import Footer from "../../../components/Footer/Footer";
+import { Link } from "react-router-dom";
+import MostPopular from "./MostPopular/MostPopular";
 
 class Home extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
     render() {
         return (
             <div>
                 <header className="header">
                     <Navigation />
                     <div className="banner-container">
-                        {/* <div id="responsive-nav" style="display: none">
-                            <input
-                                className="responsive-nav__input"
-                                type="text"
-                                placeholder="Search freshstart.com"
-                            />
-                            <hr className="responsive-nav__bottomLine" />
-                            <a
-                                className="responsive-nav__link"
-                                href="./index.html"
-                            >
-                                Home
-                            </a>
-                            <hr className="responsive-nav__link__bottomLine" />
-                            <a
-                                className="responsive-nav__link"
-                                href="./collections/index.html"
-                            >
-                                Products
-                            </a>
-                            <hr className="responsive-nav__link__bottomLine" />
-                            <a
-                                className="responsive-nav__link"
-                                href="./contact/index.html"
-                            >
-                                Contact
-                            </a>
-                        </div> */}
                         <div className="banner-contents">
                             <h1 id="bannerTitle">
                                 <span id="left">Happiness</span>
@@ -54,7 +30,7 @@ class Home extends Component {
                     </div>
                 </header>
                 <main>
-                    <div className="five-grid-container">
+                    <div className="home-mostPopular-container">
                         <div className="home-grid-container__title__container">
                             <h2 className="home-grid-container__title">
                                 Top Sellers
@@ -64,90 +40,30 @@ class Home extends Component {
                                 classic Milk Bar favorites.
                             </p>
                         </div>
-                        <i
+                        {/* <i
                             id="home-icon-left"
                             className="fas fa-angle-left"
                         ></i>
                         <i
                             id="home-icon-right"
                             className="fas fa-angle-right"
-                        ></i>
-                        <article className="home-grid-container__column">
-                            <img
-                                className="grid-item"
-                                src={testCupcake}
-                                alt="cupcake"
-                            />
-                            <h3 className="home-grid-container__column__title">
-                                Dream Home
-                            </h3>
-                            <hr className="home-grid-container__column__bottomLine" />
-                            <p className="home-grid-container__column__text">
-                                When you undergo a home renovation you have the
-                                opportunity
-                            </p>
-                        </article>
-                        <article className="home-grid-container__column">
-                            <img
-                                className="grid-item"
-                                src={testCupcake}
-                                alt="cupcake"
-                            />
-                            <h3 className="home-grid-container__column__title">
-                                Dream Home
-                            </h3>
-                            <hr className="home-grid-container__column__bottomLine" />
-                            <p className="home-grid-container__column__text">
-                                When you undergo a home renovation you have the
-                                opportunity
-                            </p>
-                        </article>
-                        <article className="home-grid-container__column">
-                            <img
-                                className="grid-item"
-                                src={testCupcake}
-                                alt="cupcake"
-                            />
-                            <h3 className="home-grid-container__column__title">
-                                Dream Home
-                            </h3>
-                            <hr className="home-grid-container__column__bottomLine" />
-                            <p className="home-grid-container__column__text">
-                                When you undergo a home renovation you have the
-                                opportunity
-                            </p>
-                        </article>
-                        <article className="home-grid-container__column">
-                            <img
-                                className="grid-item"
-                                src={testCupcake}
-                                alt="cupcake"
-                            />
-                            <h3 className="home-grid-container__column__title">
-                                Dream Home
-                            </h3>
-                            <hr className="home-grid-container__column__bottomLine" />
-                            <p className="home-grid-container__column__text">
-                                When you undergo a home renovation you have the
-                                opportunity
-                            </p>
-                        </article>
-                        <article className="home-grid-container__column">
-                            <img
-                                className="grid-item"
-                                src={testCupcake}
-                                alt="cupcake"
-                            />
-                            <h3 className="home-grid-container__column__title">
-                                Dream Home
-                            </h3>
-                            <hr className="home-grid-container__column__bottomLine" />
-                            <p className="home-grid-container__column__text">
-                                When you undergo a home renovation you have the
-                                opportunity
-                            </p>
-                        </article>
-                        <button id="view-more-btn">View More</button>
+                        ></i> */}
+                        <div id="mostPopular__grid__container">
+                            {this.props.data.map((item, index) => {
+                                return (
+                                    <MostPopular
+                                        key={item.name + index}
+                                        capitalize={this.props.capitalize}
+                                        item={item}
+                                    />
+                                );
+                            })}
+                        </div>
+
+                        {/* <button id="view-more-btn">View More</button> */}
+                        <Link to="/products">
+                            <button className="home-btn">View More</button>
+                        </Link>
                     </div>
                     <div className="info-grid-container">
                         <h2 className="home-grid-container__title">

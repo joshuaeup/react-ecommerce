@@ -44,8 +44,8 @@ class Cart extends Component {
         };
     }
 
-    componentWillUpdate() {
-        console.log("[CART]: willUpdate");
+    componentDidMount() {
+        window.scrollTo(0, 0);
     }
 
     render() {

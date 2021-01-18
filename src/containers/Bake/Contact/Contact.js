@@ -3,6 +3,9 @@ import Footer from "../../../components/Footer/Footer";
 import Navigation from "../../../components/Navigation/Navigation";
 
 class Contact extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
     render() {
         return (
             <>
