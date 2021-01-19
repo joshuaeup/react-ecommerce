@@ -22,7 +22,7 @@
                     "five": 4
                 }
             ],
-            "price": 2.99
+            "price": 3.99
         },
         {
             "image": "https://prismic-io.s3.amazonaws.com/lesbonneschoses/bf6819a34ff187c5a59d781351a91834c92b7ebf.png",
@@ -46,7 +46,7 @@
                     "five": 5
                 }
             ],
-            "price": 2.99
+            "price": 4.99
         },
         {
             "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
@@ -70,7 +70,7 @@
                     "five": 6
                 }
             ],
-            "price": 2.99
+            "price": 4.99
         },
         {
             "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
@@ -94,7 +94,7 @@
                     "five": 7
                 }
             ],
-            "price": 2.99
+            "price": 5.99
         },
         {
             "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
@@ -362,7 +362,7 @@
                     "five": 2
                 }
             ],
-            "price": 2.99
+            "price": 3.99
         }
     ]
 }

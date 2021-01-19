@@ -582,6 +582,34 @@
 #main #products-sort-container :nth-child(2) {
   justify-self: end;
 }
+#main #products-sort-container .dropdown-nav__container #dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  width: 10rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  transition: all 2s;
+  list-style: none;
+}
+#main #products-sort-container .dropdown-nav__container #dropdown li {
+  margin: 0 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e2ded6;
+}
+#main #products-sort-container .dropdown-nav__container #dropdown :nth-child(2) {
+  border-bottom: none;
+}
+#main #products-sort-container .dropdown-nav__container #dropdown li:hover {
+  cursor: pointer;
+  color: #4343ff;
+}
+#main #products-sort-container .dropdown-nav__container:hover #dropdown {
+  display: block;
+}
 #main .underline {
   background-color: #45271f;
   height: 0.2rem;
