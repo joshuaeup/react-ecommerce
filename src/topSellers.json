@@ -1,9 +1,9 @@
 {
     "topSellers": [
         {
-            "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
+            "image": "https://i.pinimg.com/originals/51/72/49/517249fbf8a54e6c26b3e06080593bb2.png",
             "type": "cupcake",
-            "name": "strawberry",
+            "name": "birthday",
             "reviews": 18,
             "ratings": [
                 {
@@ -19,15 +19,39 @@
                     "four": 0
                 },
                 {
-                    "five": 4
+                    "five": 2
+                }
+            ],
+            "price": 6.99
+        },
+        {
+            "image": "https://cdn.picpng.com/cookie/pattern-cookie-26888.png",
+            "type": "cookie",
+            "name": "ginger",
+            "reviews": 19,
+            "ratings": [
+                {
+                    "one": 0
+                },
+                {
+                    "two": 0
+                },
+                {
+                    "three": 0
+                },
+                {
+                    "four": 0
+                },
+                {
+                    "five": 2
                 }
             ],
             "price": 3.99
         },
         {
-            "image": "https://prismic-io.s3.amazonaws.com/lesbonneschoses/bf6819a34ff187c5a59d781351a91834c92b7ebf.png",
-            "type": "cupcake",
-            "name": "chocolate",
+            "image": "https://assets.stickpng.com/images/5c507767bb7e2a029589d253.png",
+            "type": "pie",
+            "name": "keylime",
             "reviews": 18,
             "ratings": [
                 {
@@ -43,15 +67,15 @@
                     "four": 0
                 },
                 {
-                    "five": 5
+                    "five": 2
                 }
             ],
-            "price": 4.99
+            "price": 2.99
         },
         {
-            "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
-            "type": "cupcake",
-            "name": "strawberry",
+            "image": "https://i.dlpng.com/static/png/6625391_preview.png",
+            "type": "pie",
+            "name": "peach",
             "reviews": 18,
             "ratings": [
                 {
@@ -67,39 +91,15 @@
                     "four": 0
                 },
                 {
-                    "five": 6
+                    "five": 2
                 }
             ],
-            "price": 4.99
+            "price": 2.99
         },
         {
-            "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
+            "image": "https://www.pngkey.com/png/full/7-77025_galaxy-cupcakes-square-png-picture-galaxy-cupcakes-the.png",
             "type": "cupcake",
-            "name": "strawberry",
-            "reviews": 18,
-            "ratings": [
-                {
-                    "one": 0
-                },
-                {
-                    "two": 0
-                },
-                {
-                    "three": 0
-                },
-                {
-                    "four": 0
-                },
-                {
-                    "five": 7
-                }
-            ],
-            "price": 5.99
-        },
-        {
-            "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
-            "type": "cupcake",
-            "name": "strawberry",
+            "name": "galaxy",
             "reviews": 18,
             "ratings": [
                 {
@@ -118,7 +118,7 @@
                     "five": 8
                 }
             ],
-            "price": 2.99
+            "price": 6.99
         }
     ]
 }
