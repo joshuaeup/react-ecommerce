@@ -215,30 +215,6 @@
                 }
             ],
             "price": 2.99
-        },
-        {
-            "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
-            "type": "cupcake",
-            "name": "strawberry",
-            "reviews": 18,
-            "ratings": [
-                {
-                    "one": 0
-                },
-                {
-                    "two": 0
-                },
-                {
-                    "three": 0
-                },
-                {
-                    "four": 0
-                },
-                {
-                    "five": 2
-                }
-            ],
-            "price": 2.99
         }
     ],
     "pie": [
@@ -313,11 +289,13 @@
                 }
             ],
             "price": 2.99
-        },
+        }
+    ],
+    "cookie": [
         {
-            "image": "https://library.kissclipart.com/20180922/are/kissclipart-pumpkin-pie-png-clipart-pumpkin-pie-clip-art-688581ae068a4a07.png",
-            "type": "pie",
-            "name": "pumpkin",
+            "image": "https://www.transparentpng.com/thumb/cookie/cookie-png-5.png",
+            "type": "cookie",
+            "name": "chocolate",
             "reviews": 18,
             "ratings": [
                 {
@@ -337,14 +315,12 @@
                 }
             ],
             "price": 2.99
-        }
-    ],
-    "cookie": [
+        },
         {
             "image": "https://www.transparentpng.com/thumb/cookie/cookie-png-5.png",
             "type": "cookie",
-            "name": "chocolate",
-            "reviews": 18,
+            "name": "oreo",
+            "reviews": 19,
             "ratings": [
                 {
                     "one": 0

@@ -23,9 +23,11 @@ class Home extends Component {
                                 Experience the best of baking with Baked and
                                 Bubbly
                             </p>
-                            <button type="button" id="btn">
-                                Order Now
-                            </button>
+                            <Link to="/products">
+                                <button type="button" id="btn">
+                                    Order Now
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </header>
@@ -40,14 +42,6 @@ class Home extends Component {
                                 classic Milk Bar favorites.
                             </p>
                         </div>
-                        {/* <i
-                            id="home-icon-left"
-                            className="fas fa-angle-left"
-                        ></i>
-                        <i
-                            id="home-icon-right"
-                            className="fas fa-angle-right"
-                        ></i> */}
                         <div id="mostPopular__grid__container">
                             {this.props.data.map((item, index) => {
                                 return (
@@ -60,9 +54,8 @@ class Home extends Component {
                             })}
                         </div>
 
-                        {/* <button id="view-more-btn">View More</button> */}
                         <Link to="/products">
-                            <button className="checkout-btn">View More</button>
+                            <button className="home-btn">View More</button>
                         </Link>
                     </div>
                     <div className="info-grid-container">

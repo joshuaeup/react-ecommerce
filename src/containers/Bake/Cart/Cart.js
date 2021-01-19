@@ -73,7 +73,7 @@ class Cart extends Component {
                         </div>
                     </header>
                     <hr className="divideLine" />
-                    <main id="main" className="product-main">
+                    <main id="padded-main" className="product-main">
                         <CartItems
                             items={this.props.items}
                             configurations={this.props.configurations}

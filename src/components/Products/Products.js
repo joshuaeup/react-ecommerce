@@ -15,7 +15,6 @@ class Products extends Component {
         return (
             <Aux>
                 <Link to={route}>
-                    {/* <Link to={route} component={Product}> */}
                     <article className="product-grid-container__column">
                         <div className="product-grid-item-img">
                             <img
@@ -26,7 +25,10 @@ class Products extends Component {
                         </div>
                         <div className="product-grid-desc">
                             <div className="product-grid-item">
-                                <p>{capitalize(this.props.name)}</p>
+                                <p>
+                                    {capitalize(this.props.name)}{" "}
+                                    {capitalize(this.props.type)}
+                                </p>
                             </div>
                             {/* <div className="product-grid-item">
                                 <span>
@@ -40,7 +42,7 @@ class Products extends Component {
                             </div> */}
                             <div className="product-grid-item">
                                 <span className="grid-price">
-                                    {this.props.price}
+                                    ${this.props.price}
                                 </span>
                             </div>
                         </div>

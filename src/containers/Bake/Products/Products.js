@@ -14,9 +14,14 @@ class Products extends Component {
         return (
             <div>
                 <Navigation />
-                <main id="padded-main">
+                <main id="main" style={{ paddingBottom: "0" }}>
                     <h2 className="home-grid-container__title">Products</h2>
-                    <hr className="underline" />
+                    <hr className="divideLine" />
+                    <div id="products-sort-container">
+                        <p>{this.props.data.length} results found</p>
+                        <p>Sort By: Cost</p>
+                    </div>
+                    <hr className="divideLine" style={{ marginBottom: "0" }} />
                     <div id="six-grid-container">
                         {this.props.data.map((data, index) => {
                             return (

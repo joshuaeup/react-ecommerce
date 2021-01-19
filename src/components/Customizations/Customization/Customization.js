@@ -17,8 +17,6 @@ const Customizations = (props) => {
                         onChange={props.onChange}
                     />
                     <div className="radio-overlay"></div>
-
-                    <span className="text">Other Info</span>
                 </label>
             </div>
             <div className="input-radio">
@@ -32,8 +30,6 @@ const Customizations = (props) => {
                         onChange={props.onChange}
                     />
                     <div className="radio-overlay"></div>
-
-                    <span className="text">Other Info</span>
                 </label>
             </div>
         </div>
