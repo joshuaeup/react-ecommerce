@@ -67,7 +67,10 @@ class Product extends Component {
                                         />
                                     </div>
                                 </div> */}
-                                <hr className="divideLine" />
+                                <hr
+                                    className="divideLine"
+                                    style={{ width: "80%" }}
+                                />
                             </div>
                         </div>
                         <div className="product-dual-column">

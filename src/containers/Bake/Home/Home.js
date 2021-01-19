@@ -24,7 +24,7 @@ class Home extends Component {
                                 Bubbly
                             </p>
                             <Link to="/products">
-                                <button type="button" id="btn">
+                                <button type="button" className="btn">
                                     Order Now
                                 </button>
                             </Link>
@@ -55,7 +55,15 @@ class Home extends Component {
                         </div>
 
                         <Link to="/products">
-                            <button className="home-btn">View More</button>
+                            <button
+                                className="btn"
+                                style={{
+                                    paddingTop: "0.8rem",
+                                    paddingBottom: "0.8rem",
+                                }}
+                            >
+                                View More
+                            </button>
                         </Link>
                     </div>
                     <div className="info-grid-container">

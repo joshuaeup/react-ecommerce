@@ -97,9 +97,9 @@
             "price": 5.99
         },
         {
-            "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
+            "image": "https://www.pngkey.com/png/full/7-77025_galaxy-cupcakes-square-png-picture-galaxy-cupcakes-the.png",
             "type": "cupcake",
-            "name": "strawberry",
+            "name": "galaxy",
             "reviews": 18,
             "ratings": [
                 {
@@ -118,12 +118,12 @@
                     "five": 8
                 }
             ],
-            "price": 2.99
+            "price": 6.99
         },
         {
-            "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
+            "image": "https://i.pinimg.com/originals/51/72/49/517249fbf8a54e6c26b3e06080593bb2.png",
             "type": "cupcake",
-            "name": "strawberry",
+            "name": "birthday",
             "reviews": 18,
             "ratings": [
                 {
@@ -142,7 +142,7 @@
                     "five": 2
                 }
             ],
-            "price": 2.99
+            "price": 6.99
         },
         {
             "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",

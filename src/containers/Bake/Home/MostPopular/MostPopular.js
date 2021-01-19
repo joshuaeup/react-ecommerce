@@ -23,6 +23,9 @@ class MostPopular extends Component {
                                 <p>
                                     {this.props.capitalize(
                                         this.props.item.name
+                                    )}{" "}
+                                    {this.props.capitalize(
+                                        this.props.item.type
                                     )}
                                 </p>
                             </div>

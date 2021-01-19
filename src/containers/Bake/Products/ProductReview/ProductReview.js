@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import Aux from "../../../../hoc/Aux/Aux";
 import Navigation from "../../../../components/Navigation/Navigation";
 import Footer from "../../../../components/Footer/Footer";

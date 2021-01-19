@@ -13,11 +13,10 @@ const Navigation = () => {
                     Home
                 </Link>
                 <div className="dropdown-nav__container main-nav__link">
-                    <span>
-                        <Link className="main-nav__link" to="/products">
-                            Products
-                        </Link>
-                    </span>
+                    <Link className="main-nav__link" to="/products">
+                        <span>Products</span>
+                    </Link>
+
                     <ul id="dropdown">
                         <Link to="/products/cupcake">
                             <li>Cupcakes</li>
@@ -31,6 +30,7 @@ const Navigation = () => {
                         </Link>
                     </ul>
                 </div>
+
                 <Link className="main-nav__link" to="/contact">
                     Contact
                 </Link>

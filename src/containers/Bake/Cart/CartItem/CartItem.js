@@ -1,10 +1,6 @@
 import React, { Component } from "react";
 
 class CartItem extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     remove = () => {
         this.props.removeFromCart(this.props.index);
     };
