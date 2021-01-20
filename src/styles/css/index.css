@@ -81,6 +81,7 @@
   width: 100%;
   margin: auto;
   vertical-align: middle;
+  position: relative;
 }
 
 .product-header {
@@ -673,11 +674,16 @@
   font-weight: bold;
 }
 
-.review-grid-text {
+.review-grid-text,
+.review-grid-title {
   text-align: center;
   padding: 0 1.5rem;
   color: #303030;
   font-size: 1rem;
+}
+
+.review-grid-title {
+  font-size: 1.3rem;
 }
 
 .info-grid-container {
@@ -731,6 +737,7 @@
   top: 50%;
   transform: translateY(-50%);
   font-size: 5rem;
+  z-index: 10;
 }
 
 #review-icon-left {
@@ -1074,15 +1081,25 @@
 
 .slider {
   position: relative;
-  height: 100vh;
+  height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
+.slider .slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+.slider .active {
+  opacity: 1;
+  transition-duration: 1s;
+  transition: scale(1.08);
+}
 .slider .image {
-  width: 1000px;
   height: 100%;
+  width: 20%;
+  border-radius: 100%;
 }
 
 * {

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { SliderData } from "./SliderData";
+// import { SliderData } from "./SliderData";
+
+let loading = "";
 
 const ImageSlider = ({ slides }) => {
     // State variables and methods
@@ -26,23 +28,38 @@ const ImageSlider = ({ slides }) => {
             <i
                 id="review-icon-left"
                 className="fas fa-angle-left"
-                onClick={nextSlide}
+                onClick={prevSlide}
             ></i>
             <i
                 id="review-icon-right"
                 className="fas fa-angle-right"
-                onClick={prevSlide}
+                onClick={nextSlide}
             ></i>
-            <section className="slider">
-                {SliderData.map((slide, index) => {
+            <section className="slider review-grid-container__column">
+                {slides.map((slide, index) => {
                     return (
-                        <div key={index}>
+                        <div
+                            key={index}
+                            className={
+                                index === current
+                                    ? `slide ${loading} active`
+                                    : "slide"
+                            }
+                        >
                             {index === current && (
-                                <img
-                                    src={slide.image}
-                                    alt="placeholder"
-                                    className="image"
-                                />
+                                <>
+                                    <img
+                                        src={slide.image}
+                                        alt="placeholder"
+                                        className="image"
+                                    />
+                                    <h3 className="review-grid-title">
+                                        {slide.name}
+                                    </h3>
+                                    <p className="review-grid-text">
+                                        {slide.message}
+                                    </p>
+                                </>
                             )}
                         </div>
                     );

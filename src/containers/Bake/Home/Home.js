@@ -14,8 +14,9 @@ class Home extends Component {
     render() {
         return (
             <div>
+                <Navigation />
+
                 <header className="header">
-                    <Navigation />
                     <div className="banner-container">
                         <div className="banner-contents">
                             <h1 id="bannerTitle">
@@ -114,40 +115,11 @@ class Home extends Component {
                         <h2 className="home-grid-container__title">
                             What our customers say
                         </h2>
-                        <article className="review-grid-container__column">
-                            <i
-                                id="review-icon-left"
-                                className="fas fa-angle-left"
-                            ></i>
-                            <i
-                                id="review-icon-right"
-                                className="fas fa-angle-right"
-                            ></i>
-                            <img
-                                className="review-grid-photo"
-                                src="https://monteluke.com.au/wp-content/gallery/linkedin-profile-pictures/9.JPG"
-                                alt="cupcake"
-                            />
-                            <p className="review-grid-text">
-                                <i className="fas fa-quote-left"></i> Lorem
-                                ipsum dolor sit amet consectetur adipisicing
-                                elit. Quae eligendi rem recusandae cupiditate
-                                veritatis quas dolore? Animi, nisi quisquam
-                                obcaecati, dolore molestiae blanditiis
-                                distinctio, dicta veniam commodi ea non in.
-                                Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit. Ipsum commodi eos distinctio
-                                modi laudantium. Amet, esse tempora non,
-                                consectetur odit deleniti ullam ipsa natus, eos
-                                blanditiis officiis praesentium voluptas?
-                                Explicabo!
-                                <i className="fas fa-quote-right"></i>
-                            </p>
-                        </article>
-                    </div>
-                    <div className="review-grid-container">
                         <ImageSlider slides={SliderData} />
                     </div>
+                    {/* <div className="review-grid-container">
+                        <ImageSlider slides={SliderData} />
+                    </div> */}
                 </main>
                 <Footer />
             </div>
