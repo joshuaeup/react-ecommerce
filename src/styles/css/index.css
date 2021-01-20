@@ -353,17 +353,42 @@
   color: #45271f;
 }
 .home-mostPopular-container #mostPopular__grid__container .product-grid-container__column {
-  text-decoration: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: min-content;
+  padding: 3rem 0;
 }
 .home-mostPopular-container #mostPopular__grid__container .product-grid-container__column .product-grid-item-img {
-  height: 30vh;
+  height: 15rem;
+  width: 10rem;
+  justify-self: center;
+  display: grid;
+  justify-content: center;
 }
 .home-mostPopular-container #mostPopular__grid__container .product-grid-container__column .product-grid-item-img .grid-img {
-  height: 100%;
+  justify-self: center;
+  align-self: center;
   width: auto;
+  height: 100%;
 }
 .home-mostPopular-container #mostPopular__grid__container .product-grid-container__column .product-grid-desc {
-  font-size: 1.3rem;
+  height: auto;
+  font-size: 1.7rem;
+  text-align: center;
+}
+.home-mostPopular-container #mostPopular__grid__container .product-grid-container__column .product-grid-desc .product-grid-item,
+.home-mostPopular-container #mostPopular__grid__container .product-grid-container__column .product-grid-desc .product-grid-item-img {
+  color: black;
+}
+.home-mostPopular-container #mostPopular__grid__container .product-grid-container__column .product-grid-desc .product-grid-item .star-icon,
+.home-mostPopular-container #mostPopular__grid__container .product-grid-container__column .product-grid-desc .product-grid-item-img .star-icon {
+  color: gold;
+}
+.home-mostPopular-container #mostPopular__grid__container .product-grid-container__column .product-grid-desc .product-grid-item {
+  margin: 1rem 0;
+}
+.home-mostPopular-container #mostPopular__grid__container .product-grid-container__column .product-grid-desc .product-grid-item p {
+  margin: 0;
 }
 .home-mostPopular-container .home-btn {
   padding: 0.5rem 0;
@@ -1045,6 +1070,19 @@
   color: white;
   cursor: pointer;
   width: 100%;
+}
+
+.slider {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.slider .image {
+  width: 1000px;
+  height: 100%;
 }
 
 * {

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Customization from "./Customization/Customization";
-import Aux from "../../hoc/Aux/Aux";
+// import Aux from "../../hoc/Aux/Aux";
 import { Link } from "react-router-dom";
 const customizations = [
     {
@@ -45,7 +45,7 @@ class Customizations extends Component {
         const route =
             "/products/" + this.props.type + "/" + this.props.name + "/review";
         return (
-            <Aux>
+            <>
                 {customizations.map((custom, index) => {
                     return (
                         <Customization
@@ -67,7 +67,7 @@ class Customizations extends Component {
                         </button>
                     </Link>
                 </div>
-            </Aux>
+            </>
         );
     }
 }

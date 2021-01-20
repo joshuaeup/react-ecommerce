@@ -27,7 +27,9 @@ const CartSummary = (props) => {
                     <h3>${props.totalPrice}</h3>
                 </div>
             </div>
-            <button className="checkout-btn">Check Out</button>
+            <button className="checkout-btn" onClick={props.checkout}>
+                Check Out
+            </button>
         </div>
     );
 };

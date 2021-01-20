@@ -18,6 +18,10 @@ class Cart extends Component {
         window.scrollTo(0, 0);
     }
 
+    checkoutHandler = () => {
+        alert("Feature Coming Soon");
+    };
+
     render() {
         // Find the sum of all within cart array
         let total = 0;
@@ -60,7 +64,7 @@ class Cart extends Component {
                     <header className="cart-header">
                         <div className="header-row">
                             <h2 className="header-title">
-                                Your cart total is ${total}
+                                Your cart total is ${total.toFixed(2)}
                             </h2>
                         </div>
                         <div className="header-row">
@@ -69,7 +73,12 @@ class Cart extends Component {
                             </p>
                         </div>
                         <div className="header-row">
-                            <button className="header-btn">Check Out</button>
+                            <button
+                                className="header-btn"
+                                onClick={this.checkoutHandler}
+                            >
+                                Check Out
+                            </button>
                         </div>
                     </header>
                     <hr className="divideLine" />
@@ -81,7 +90,11 @@ class Cart extends Component {
                             removeFromCart={this.props.removeFromCart}
                         />
                         <hr className="divideLine" />
-                        <CartSummary price={total} totalPrice={total} />
+                        <CartSummary
+                            price={total.toFixed(2)}
+                            totalPrice={total.toFixed(2)}
+                            checkout={this.checkoutHandler}
+                        />
                     </main>
                 </div>
             );

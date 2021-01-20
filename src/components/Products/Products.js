@@ -20,7 +20,7 @@ class Products extends Component {
                             <img
                                 className="grid-img"
                                 src={this.props.image}
-                                alt="cupcake"
+                                alt={capitalize(this.props.type)}
                             />
                         </div>
                         <div className="product-grid-desc">

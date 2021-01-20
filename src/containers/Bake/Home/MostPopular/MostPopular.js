@@ -15,7 +15,9 @@ class MostPopular extends Component {
                             <img
                                 className="grid-img"
                                 src={this.props.item.image}
-                                alt="cupcake"
+                                alt={this.props.capitalize(
+                                    this.props.item.type
+                                )}
                             />
                         </div>
                         <div className="product-grid-desc">

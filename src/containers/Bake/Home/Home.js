@@ -3,11 +3,14 @@ import Navigation from "../../../components/Navigation/Navigation";
 import Footer from "../../../components/Footer/Footer";
 import { Link } from "react-router-dom";
 import MostPopular from "./MostPopular/MostPopular";
+import ImageSlider from "../../../components/ImageSlider/ImageSlider";
+import { SliderData } from "../../../components/ImageSlider/SliderData";
 
 class Home extends Component {
     componentDidMount() {
         window.scrollTo(0, 0);
     }
+
     render() {
         return (
             <div>
@@ -142,81 +145,9 @@ class Home extends Component {
                             </p>
                         </article>
                     </div>
-                    {/* <div className="social-grid-container">
-                        <h2 className="social-grid-container__title">
-                            Check us out online
-                        </h2>
-                        <article className="social-grid-container__column">
-                            <img
-                                className="social-grid-photo"
-                                src="https://monteluke.com.au/wp-content/gallery/linkedin-profile-pictures/9.JPG"
-                                alt="cupcake"
-                            />
-                        </article>
-                        <article className="social-grid-container__column">
-                            <img
-                                className="social-grid-photo"
-                                src="https://monteluke.com.au/wp-content/gallery/linkedin-profile-pictures/9.JPG"
-                                alt="cupcake"
-                            />
-                        </article>
-                        <article className="social-grid-container__column">
-                            <img
-                                className="social-grid-photo"
-                                src="https://monteluke.com.au/wp-content/gallery/linkedin-profile-pictures/9.JPG"
-                                alt="cupcake"
-                            />
-                        </article>
-                        <article className="social-grid-container__column">
-                            <img
-                                className="social-grid-photo"
-                                src="https://monteluke.com.au/wp-content/gallery/linkedin-profile-pictures/9.JPG"
-                                alt="cupcake"
-                            />
-                        </article>
-                        <article className="social-grid-container__column">
-                            <img
-                                className="social-grid-photo"
-                                src="https://monteluke.com.au/wp-content/gallery/linkedin-profile-pictures/9.JPG"
-                                alt="cupcake"
-                            />
-                        </article>
-                        <article className="social-grid-container__column">
-                            <img
-                                className="social-grid-photo"
-                                src="https://monteluke.com.au/wp-content/gallery/linkedin-profile-pictures/9.JPG"
-                                alt="cupcake"
-                            />
-                        </article>
-                        <article className="social-grid-container__column">
-                            <img
-                                className="social-grid-photo"
-                                src="https://monteluke.com.au/wp-content/gallery/linkedin-profile-pictures/9.JPG"
-                                alt="cupcake"
-                            />
-                        </article>
-                        <article className="social-grid-container__column">
-                            <img
-                                className="social-grid-photo"
-                                src="https://monteluke.com.au/wp-content/gallery/linkedin-profile-pictures/9.JPG"
-                                alt="cupcake"
-                            />
-                        </article>
-                        <article className="social-grid-container__column">
-                            <img
-                                className="social-grid-photo"
-                                src="https://monteluke.com.au/wp-content/gallery/linkedin-profile-pictures/9.JPG"
-                                alt="cupcake"
-                            />
-                        </article>
-                        <article className="social-grid-container__column">
-                            <img
-                                className="social-grid-photo"
-                                src="https://monteluke.com.au/wp-content/gallery/linkedin-profile-pictures/9.JPG"
-                                alt="cupcake"
-                            />
-                        </article>
-                    </div> */}
+                    <div className="review-grid-container">
+                        <ImageSlider slides={SliderData} />
+                    </div>
                 </main>
                 <Footer />
             </div>

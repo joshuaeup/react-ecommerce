@@ -1,0 +1,22 @@
+export const SliderData = [
+    {
+        image:
+            "https://images.pexels.com/photos/1184265/pexels-photo-1184265.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    },
+    {
+        image:
+            "https://images.pexels.com/photos/9095/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    },
+    {
+        image:
+            "https://images.pexels.com/photos/1070880/pexels-photo-1070880.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    },
+    {
+        image:
+            "https://images.pexels.com/photos/9510/food-pizza-kitchen-recipe.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    },
+    {
+        image:
+            "https://images.pexels.com/photos/12190/christmas-cookies-553457.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    },
+];
