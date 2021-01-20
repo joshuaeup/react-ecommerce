@@ -72,9 +72,20 @@ class Products extends Component {
             <div>
                 <Navigation />
                 <main id="main" style={{ paddingBottom: "0" }}>
-                    <h2 className="home-grid-container__title">Products</h2>
-                    <hr className="divideLine" />
-                    <div id="products-sort-container">
+                    <h2
+                        className="home-grid-container__title"
+                        style={{ backgroundColor: "white" }}
+                    >
+                        Products
+                    </h2>
+                    <hr
+                        className="divideLine"
+                        style={{ marginTop: "0", marginBottom: "0" }}
+                    />
+                    <div
+                        id="products-sort-container"
+                        style={{ backgroundColor: "white" }}
+                    >
                         <p>{this.props.data.length} results found</p>
                         {/* <p>Sort By: Price: High to Low</p> */}
                         <div className="dropdown-nav__container main-nav__link">
@@ -102,7 +113,10 @@ class Products extends Component {
                             </ul>
                         </div>
                     </div>
-                    <hr className="divideLine" style={{ marginBottom: "0" }} />
+                    <hr
+                        className="divideLine"
+                        style={{ marginTop: "0", marginBottom: "0" }}
+                    />
                     <div id="six-grid-container">
                         {this.props.data.map((data, index) => {
                             return (

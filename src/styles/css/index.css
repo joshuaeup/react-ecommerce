@@ -91,11 +91,11 @@
   background-color: white;
   justify-content: center;
   padding: 0 12rem;
-  border-top: 1px solid #d6d6d6;
   border-bottom: 1px solid #d6d6d6;
   position: sticky;
   top: 3rem;
   z-index: 2;
+  color: #45271f;
 }
 .product-header .product-dual-column:nth-child(1) {
   justify-self: start;
@@ -110,6 +110,7 @@
   grid-auto-rows: min-content;
   justify-content: center;
   padding: 3% 30%;
+  color: #45271f;
 }
 .cart-header .header-row {
   margin: 0;
@@ -129,7 +130,7 @@
   width: 40%;
   border: none;
   border-radius: 5px;
-  background-color: #4343ff;
+  background: linear-gradient(to bottom, #5c5cff, #4343ff);
   color: white;
   font-size: 1.2rem;
   cursor: pointer;
@@ -195,13 +196,14 @@
   text-align: center;
   height: 3rem;
   line-height: 3rem;
+  border-bottom: solid #d6d6d6a9 2px;
 }
 .main-nav #main-nav__link__container {
   height: 3rem;
 }
 .main-nav #main-nav__link__container a {
   text-decoration: none;
-  color: black;
+  color: #45271f;
 }
 .main-nav #main-nav__link__container .dropdown-nav__container #dropdown {
   display: none;
@@ -379,7 +381,7 @@
 }
 .home-mostPopular-container #mostPopular__grid__container .product-grid-container__column .product-grid-desc .product-grid-item,
 .home-mostPopular-container #mostPopular__grid__container .product-grid-container__column .product-grid-desc .product-grid-item-img {
-  color: black;
+  color: #45271f;
 }
 .home-mostPopular-container #mostPopular__grid__container .product-grid-container__column .product-grid-desc .product-grid-item .star-icon,
 .home-mostPopular-container #mostPopular__grid__container .product-grid-container__column .product-grid-desc .product-grid-item-img .star-icon {
@@ -505,7 +507,7 @@
 }
 #padded-main #six-grid-container .product-grid-container__column .product-grid-desc .product-grid-item,
 #padded-main #six-grid-container .product-grid-container__column .product-grid-desc .product-grid-item-img {
-  color: black;
+  color: #45271f;
 }
 #padded-main #six-grid-container .product-grid-container__column .product-grid-desc .product-grid-item .star-icon,
 #padded-main #six-grid-container .product-grid-container__column .product-grid-desc .product-grid-item-img .star-icon {
@@ -516,22 +518,26 @@
 }
 
 #main {
-  padding: 1rem 0 7rem 0;
+  padding: 0 0 7rem 0;
   width: 100%;
 }
-#main #products-sort-container {
+#main #products-sort-container,
+#main #products-banner {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
-  padding: 0 3rem;
+  padding: 1rem 3rem;
 }
-#main #products-sort-container :nth-child(1) {
+#main #products-sort-container :nth-child(1),
+#main #products-banner :nth-child(1) {
   justify-self: start;
 }
-#main #products-sort-container :nth-child(2) {
+#main #products-sort-container :nth-child(2),
+#main #products-banner :nth-child(2) {
   justify-self: end;
 }
-#main #products-sort-container .dropdown-nav__container #dropdown {
+#main #products-sort-container .dropdown-nav__container #dropdown,
+#main #products-banner .dropdown-nav__container #dropdown {
   display: none;
   position: absolute;
   right: 0;
@@ -544,19 +550,23 @@
   transition: all 2s;
   list-style: none;
 }
-#main #products-sort-container .dropdown-nav__container #dropdown li {
+#main #products-sort-container .dropdown-nav__container #dropdown li,
+#main #products-banner .dropdown-nav__container #dropdown li {
   margin: 0 1rem;
   padding: 1rem 0;
   border-bottom: 1px solid #e2ded6;
 }
-#main #products-sort-container .dropdown-nav__container #dropdown :nth-child(2) {
+#main #products-sort-container .dropdown-nav__container #dropdown :nth-child(2),
+#main #products-banner .dropdown-nav__container #dropdown :nth-child(2) {
   border-bottom: none;
 }
-#main #products-sort-container .dropdown-nav__container #dropdown li:hover {
+#main #products-sort-container .dropdown-nav__container #dropdown li:hover,
+#main #products-banner .dropdown-nav__container #dropdown li:hover {
   cursor: pointer;
   color: #4343ff;
 }
-#main #products-sort-container .dropdown-nav__container:hover #dropdown {
+#main #products-sort-container .dropdown-nav__container:hover #dropdown,
+#main #products-banner .dropdown-nav__container:hover #dropdown {
   display: block;
 }
 #main .underline {
@@ -602,7 +612,7 @@
 }
 #main #six-grid-container .product-grid-container__column .product-grid-desc .product-grid-item,
 #main #six-grid-container .product-grid-container__column .product-grid-desc .product-grid-item-img {
-  color: black;
+  color: #45271f;
 }
 #main #six-grid-container .product-grid-container__column .product-grid-desc .product-grid-item .star-icon,
 #main #six-grid-container .product-grid-container__column .product-grid-desc .product-grid-item-img .star-icon {
@@ -642,11 +652,13 @@
   width: 100%;
   color: #45271f;
   margin-bottom: 0;
+  margin-top: 0;
   text-align: center;
 }
 
 .home-grid-container__title {
-  margin: 0.5rem 0;
+  grid-auto-rows: min-content;
+  padding: 1rem 0;
 }
 
 .home-grid-container__subTitle {
@@ -678,7 +690,7 @@
 .review-grid-title {
   text-align: center;
   padding: 0 1.5rem;
-  color: #303030;
+  color: #45271f;
   font-size: 1rem;
 }
 
@@ -807,6 +819,7 @@
 .product-dual-grid .product-dual-column {
   display: relative;
   grid-auto-rows: min-content;
+  color: #45271f;
 }
 .product-dual-grid .product-dual-column #product-image-sticky {
   position: sticky;
@@ -844,6 +857,7 @@
   grid-auto-rows: min-content;
   height: 100%;
   margin-bottom: 4rem;
+  color: #45271f;
 }
 .cart-dual-grid .cart-dual-column,
 .cart-preview-dual-grid .cart-dual-column {
@@ -976,7 +990,7 @@
   width: 30%;
   border: none;
   border-radius: 5px;
-  background-color: #4343ff;
+  background: linear-gradient(to bottom, #5c5cff, #4343ff);
   color: white;
   font-size: 1.2rem;
   cursor: pointer;
@@ -1020,6 +1034,7 @@
   font-size: 0.8rem;
 }
 .input-radio__container .input-radio {
+  background-color: white;
   border: solid 2px #d6d6d6;
   margin: 1rem 0;
   display: grid;
@@ -1069,7 +1084,7 @@
   justify-content: stretch;
 }
 .cart-add__container .cart-add__btn {
-  background-color: #4343ff;
+  background: linear-gradient(to bottom, #5c5cff, #4343ff);
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: none;
@@ -1114,6 +1129,7 @@ body {
 
 body {
   background-color: #f8edd6;
+  overflow-x: hidden;
   margin-top: 3rem;
 }
 
