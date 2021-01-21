@@ -25,16 +25,6 @@ const ImageSlider = ({ slides }) => {
     return (
         <>
             {" "}
-            <i
-                id="review-icon-left"
-                className="fas fa-angle-left"
-                onClick={prevSlide}
-            ></i>
-            <i
-                id="review-icon-right"
-                className="fas fa-angle-right"
-                onClick={nextSlide}
-            ></i>
             <section className="slider review-grid-container__column">
                 {slides.map((slide, index) => {
                     return (
@@ -48,11 +38,21 @@ const ImageSlider = ({ slides }) => {
                         >
                             {index === current && (
                                 <>
+                                    <i
+                                        id="review-icon-left"
+                                        className="fas fa-angle-left"
+                                        onClick={prevSlide}
+                                    ></i>{" "}
                                     <img
                                         src={slide.image}
                                         alt="placeholder"
                                         className="image"
-                                    />
+                                    />{" "}
+                                    <i
+                                        id="review-icon-right"
+                                        className="fas fa-angle-right"
+                                        onClick={nextSlide}
+                                    ></i>
                                     <h3 className="review-grid-title">
                                         {slide.name}
                                     </h3>
