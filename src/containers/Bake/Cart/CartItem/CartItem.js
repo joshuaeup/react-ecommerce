@@ -9,6 +9,10 @@ class CartItem extends Component {
             this.props.configurations.option2,
         ],
     };
+
+    componentDidMount() {
+        console.log(this.props.configurations.customizations[0].type);
+    }
     remove = () => {
         this.props.removeFromCart(this.props.index);
     };
@@ -38,7 +42,11 @@ class CartItem extends Component {
                             <ul>
                                 {this.props.configurations.option0 !== "" && (
                                     <li className="cart-desc__container__body__config">
-                                        Icing Flavor:{" "}
+                                        {
+                                            this.props.configurations
+                                                .customizations[0].type
+                                        }
+                                        :{" "}
                                         {this.props.configurations.option0.slice(
                                             0,
                                             -1
@@ -48,7 +56,11 @@ class CartItem extends Component {
 
                                 {this.props.configurations.option1 !== "" && (
                                     <li className="cart-desc__container__body__config">
-                                        Collection Size:{" "}
+                                        {
+                                            this.props.configurations
+                                                .customizations[1].type
+                                        }
+                                        :{" "}
                                         {this.props.configurations.option1.slice(
                                             0,
                                             -1
@@ -57,7 +69,11 @@ class CartItem extends Component {
                                 )}
                                 {this.props.configurations.option2 !== "" && (
                                     <li className="cart-desc__container__body__config">
-                                        Filling Flavor:{" "}
+                                        {
+                                            this.props.configurations
+                                                .customizations[2].type
+                                        }
+                                        :{" "}
                                         {this.props.configurations.option2.slice(
                                             0,
                                             -1
