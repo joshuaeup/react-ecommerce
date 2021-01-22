@@ -5,7 +5,7 @@ const Navigation = () => {
         <nav className="main-nav">
             <i id="main-nav__responsive__toggle" className="fas fa-bars"></i>
             <Link className="main-nav__logo" to="/">
-                <i className="fas fa-fan"> </i> Baked and Bubbly
+                <i className="fas fa-fan"> </i> Baked and Bubbly{" "}
                 <i className="fas fa-fan"></i>
             </Link>
             <div id="main-nav__link__container">

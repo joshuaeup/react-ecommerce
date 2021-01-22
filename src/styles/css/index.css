@@ -191,7 +191,7 @@
   background-color: white;
   display: grid;
   grid-template-columns: 1fr;
-  z-index: 5;
+  z-index: 12;
   width: 100%;
   text-align: center;
   height: 3rem;
@@ -265,7 +265,6 @@
   color: #45271f;
   position: absolute;
   left: 4rem;
-  transform: translateX(0);
   text-decoration: none;
   line-height: 3rem;
 }
@@ -770,6 +769,10 @@
   border-radius: 100%;
 }
 
+.review-icon-img__container {
+  position: relative;
+}
+
 #review-icon-left,
 #review-icon-right,
 #home-icon-left,
@@ -1245,6 +1248,20 @@ body {
     width: 100%;
     margin: 0;
   }
+
+  .cart-header {
+    padding: 3% 20%;
+  }
+
+  .cart-dual-grid .cart-dual-column .cart-image-container,
+.cart-preview-dual-grid .cart-dual-column .cart-image-container {
+    height: 15vh;
+  }
+
+  .cart-dual-grid,
+.cart-preview-dual-grid {
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 800px) {
   .info-grid-container {
@@ -1263,6 +1280,20 @@ body {
 
   #main #six-grid-container {
     grid-template-columns: 1fr 1fr;
+  }
+
+  #padded-main {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .checkout-btn {
+    width: 50%;
+  }
+}
+@media (max-width: 700px) {
+  .cart-desc__container .cart-desc .cart-desc__container__body {
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 600px) {
@@ -1283,6 +1314,7 @@ body {
 
   .home-grid-container__title {
     padding: 0 2rem;
+    font-size: 2rem;
   }
 
   #review-icon-left {
@@ -1299,11 +1331,20 @@ body {
     margin-top: 3rem;
   }
 
+  .slider .slide .review-grid-title {
+    font-size: 2rem;
+  }
+
   .cart-preview-dual-grid .cart-dual-column .cart-desc__container__links {
     grid-template-columns: 1fr;
   }
   .cart-preview-dual-grid .cart-dual-column .cart-desc__container__links a {
     margin: 1rem 0;
+  }
+
+  .cart-dual-grid .cart-dual-column,
+.cart-preview-dual-grid .cart-dual-column {
+    height: auto;
   }
 }
 @media (max-width: 500px) {
@@ -1338,6 +1379,18 @@ body {
 
   .cart-preview-dual-grid {
     padding: 4rem 1rem;
+  }
+
+  .cart-header {
+    padding: 3% 10%;
+  }
+
+  .checkout-btn {
+    width: 80%;
+  }
+
+  .home-mostPopular-container {
+    display: none;
   }
 }
 

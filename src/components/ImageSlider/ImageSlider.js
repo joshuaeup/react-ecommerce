@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 // import { SliderData } from "./SliderData";
 
-let loading = "";
-
 const ImageSlider = ({ slides }) => {
     // State variables and methods
     const [current, setCurrent] = useState(0);
@@ -31,28 +29,29 @@ const ImageSlider = ({ slides }) => {
                         <div
                             key={index}
                             className={
-                                index === current
-                                    ? `slide ${loading} active`
-                                    : "slide"
+                                index === current ? `slide active` : "slide"
                             }
                         >
                             {index === current && (
                                 <>
-                                    <i
-                                        id="review-icon-left"
-                                        className="fas fa-angle-left"
-                                        onClick={prevSlide}
-                                    ></i>{" "}
-                                    <img
-                                        src={slide.image}
-                                        alt="placeholder"
-                                        className="image"
-                                    />{" "}
-                                    <i
-                                        id="review-icon-right"
-                                        className="fas fa-angle-right"
-                                        onClick={nextSlide}
-                                    ></i>
+                                    <div className="review-icon-img__container">
+                                        <i
+                                            id="review-icon-left"
+                                            className="fas fa-angle-left"
+                                            onClick={prevSlide}
+                                        ></i>{" "}
+                                        <img
+                                            src={slide.image}
+                                            alt="placeholder"
+                                            className="image"
+                                        />{" "}
+                                        <i
+                                            id="review-icon-right"
+                                            className="fas fa-angle-right"
+                                            onClick={nextSlide}
+                                        ></i>
+                                    </div>
+
                                     <h3 className="review-grid-title">
                                         {slide.name}
                                     </h3>
