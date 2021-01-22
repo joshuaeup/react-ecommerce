@@ -953,8 +953,9 @@
 .cart-dual-grid .cart-dual-column .cart-image-container .cart-image,
 .cart-preview-dual-grid .cart-dual-column .cart-image-container .cart-image {
   justify-self: center;
-  height: 100%;
-  width: auto;
+  align-self: center;
+  height: 20vh;
+  max-width: 100%;
 }
 
 .cart-preview-dual-grid {
@@ -1304,7 +1305,13 @@ body {
 
   .cart-dual-grid .cart-dual-column .cart-image-container,
 .cart-preview-dual-grid .cart-dual-column .cart-image-container {
-    height: 15vh;
+    height: 20vh;
+  }
+
+  .cart-dual-grid .cart-dual-column .cart-image-container .cart-image,
+.cart-preview-dual-grid .cart-dual-column .cart-image-container .cart-image {
+    height: 100%;
+    width: auto;
   }
 
   .cart-dual-grid,

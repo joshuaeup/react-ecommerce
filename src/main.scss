@@ -147,7 +147,16 @@ body {
 
     .cart-dual-grid .cart-dual-column .cart-image-container,
     .cart-preview-dual-grid .cart-dual-column .cart-image-container {
-        height: 15vh;
+        height: 20vh;
+    }
+
+    .cart-dual-grid .cart-dual-column .cart-image-container .cart-image,
+    .cart-preview-dual-grid
+        .cart-dual-column
+        .cart-image-container
+        .cart-image {
+        height: 100%;
+        width: auto;
     }
 
     .cart-dual-grid,

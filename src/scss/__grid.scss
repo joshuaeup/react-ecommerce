@@ -670,8 +670,9 @@ $backgroundColor: (
 
             .cart-image {
                 justify-self: center;
-                height: 100%;
-                width: auto;
+                align-self: center;
+                height: 20vh;
+                max-width: 100%;
             }
         }
     }
