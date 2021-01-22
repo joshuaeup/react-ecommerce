@@ -27,27 +27,34 @@ class CartItem extends Component {
                                 Customizations
                             </h4>
                             <ul>
-                                <li className="cart-desc__container__body__config">
-                                    Icing Flavor:{" "}
-                                    {this.props.configurations.option0.slice(
-                                        0,
-                                        -1
-                                    )}
-                                </li>
-                                <li className="cart-desc__container__body__config">
-                                    Collection Size:{" "}
-                                    {this.props.configurations.option1.slice(
-                                        0,
-                                        -1
-                                    )}
-                                </li>
-                                <li className="cart-desc__container__body__config">
-                                    Filling Flavor:{" "}
-                                    {this.props.configurations.option2.slice(
-                                        0,
-                                        -1
-                                    )}
-                                </li>
+                                {this.props.configurations.option0 !== "" && (
+                                    <li className="cart-desc__container__body__config">
+                                        Icing Flavor:{" "}
+                                        {this.props.configurations.option0.slice(
+                                            0,
+                                            -1
+                                        )}
+                                    </li>
+                                )}
+
+                                {this.props.configurations.option1 !== "" && (
+                                    <li className="cart-desc__container__body__config">
+                                        Collection Size:{" "}
+                                        {this.props.configurations.option1.slice(
+                                            0,
+                                            -1
+                                        )}
+                                    </li>
+                                )}
+                                {this.props.configurations.option2 !== "" && (
+                                    <li className="cart-desc__container__body__config">
+                                        Filling Flavor:{" "}
+                                        {this.props.configurations.option2.slice(
+                                            0,
+                                            -1
+                                        )}
+                                    </li>
+                                )}
                             </ul>
                         </div>
                         {/* <div className="cart-desc">
