@@ -6,6 +6,7 @@ class Contact extends Component {
         active: true,
     };
     componentDidMount() {
+        console.log(this.state.inputType); // "Feedback"
         window.scrollTo(0, 0);
     }
 
@@ -45,7 +46,7 @@ class Contact extends Component {
                                             name="form-input"
                                             value="feedback"
                                             checked={
-                                                this.state.inputType ==
+                                                this.state.inputType ===
                                                     "feedback" && true
                                             }
                                             onChange={this.onChangeHandler}
@@ -65,7 +66,7 @@ class Contact extends Component {
                                             name="form-input"
                                             value="general"
                                             checked={
-                                                this.state.inputType ==
+                                                this.state.inputType ===
                                                     "general" && true
                                             }
                                             onChange={this.onChangeHandler}
@@ -76,7 +77,7 @@ class Contact extends Component {
                             </div>
                         </div>
                         <div className="contact-column">
-                            {this.state.inputType == "feedback" && (
+                            {this.state.inputType === "feedback" && (
                                 <>
                                     <form onSubmit={this.formSubmitHandler}>
                                         <div className="input-container">
