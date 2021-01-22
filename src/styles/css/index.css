@@ -449,6 +449,8 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1rem;
+  grid-auto-rows: min-content;
+  margin-bottom: 1rem;
 }
 .contact-column .contact-column__link__container {
   display: grid;
@@ -461,10 +463,21 @@
 .contact-column .contact-column__link__container :nth-child(2) {
   color: #45271f;
 }
-.contact-column .contact-column__link {
+.contact-column .contact-column__link__container .contact-column__link {
   color: white;
-  padding: 0.7rem 1rem;
-  border-radius: 5px;
+  padding: 0;
+  margin: 0;
+  border-radius: 15px;
+}
+.contact-column .contact-column__link__container .contact-column__link .text__wrapper {
+  border-radius: 12px;
+  font-size: 1.1rem;
+  background-color: white;
+  color: black;
+}
+.contact-column .contact-column__link__container .radio-overlay:hover,
+.contact-column .contact-column__link__container .input[type=radio]:checked ~ .radio-overlay {
+  border: solid 2px #356bff;
 }
 .contact-column .input-container {
   display: block;
@@ -474,11 +487,14 @@
 }
 .contact-column .input-container .input-container__label {
   margin: 0.5rem 0;
+  margin-top: 0;
+  font-size: 1.2rem;
 }
 .contact-column .input-container .input-container__field {
   padding: 0.7rem 1rem;
   border: solid 1px #ced4da;
   border-radius: 5px;
+  font-size: 1rem;
 }
 .contact-column .input-container #submit {
   background-color: #45271f;
@@ -1098,7 +1114,8 @@
   grid-auto-rows: min-content;
   font-size: 0.8rem;
 }
-.input-radio__container .input-radio {
+
+.input-radio {
   background-color: white;
   border: solid 2px #d6d6d6;
   margin: 1rem 0;
@@ -1108,7 +1125,7 @@
   border-radius: 10px;
   cursor: pointer;
 }
-.input-radio__container .input-radio .text__wrapper {
+.input-radio .text__wrapper {
   padding: 1rem 1rem 0 1rem;
   display: grid;
   grid-template-columns: 1fr;
@@ -1117,10 +1134,10 @@
   font-size: 1.3rem;
   font-weight: 500;
 }
-.input-radio__container .input-radio .input {
+.input-radio .input {
   visibility: hidden;
 }
-.input-radio__container .input-radio .radio-overlay {
+.input-radio .radio-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1129,8 +1146,9 @@
   margin: 0;
   cursor: pointer;
 }
-.input-radio__container .input-radio .radio-overlay:hover,
-.input-radio__container .input-radio .input[type=radio]:checked ~ .radio-overlay {
+
+.radio-overlay:hover,
+.input[type=radio]:checked ~ .radio-overlay {
   border: solid 2px #356bff;
   border-radius: 10px;
 }

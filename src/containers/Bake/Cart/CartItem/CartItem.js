@@ -1,6 +1,14 @@
 import React, { Component } from "react";
 
 class CartItem extends Component {
+    state = {
+        // State variable to hold all customizations options for conditional
+        customizations: [
+            this.props.configurations.option0,
+            this.props.configurations.option1,
+            this.props.configurations.option2,
+        ],
+    };
     remove = () => {
         this.props.removeFromCart(this.props.index);
     };
@@ -24,7 +32,8 @@ class CartItem extends Component {
                                 {this.props.name} {this.props.type}
                             </h3>
                             <h4 className="cart-desc__container__body__customize__title">
-                                Customizations
+                                {this.state.customizations.join("") !== "" &&
+                                    "Customizations"}
                             </h4>
                             <ul>
                                 {this.props.configurations.option0 !== "" && (
