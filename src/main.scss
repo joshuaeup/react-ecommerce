@@ -1,11 +1,11 @@
-@import "partials/_banner";
-@import "partials/_header";
-@import "partials/_footer";
-@import "partials/_navbar";
-@import "partials/_resnavbar";
-@import "partials/_grid";
-@import "partials/_inputRadio";
-@import "partials/_carousel";
+@import "./scss/_banner";
+@import "./scss/_header";
+@import "./scss/_footer";
+@import "./scss/_navbar";
+@import "./scss/_resnavbar";
+@import "./scss/_grid";
+@import "./scss/_inputRadio";
+@import "./scss/_carousel";
 
 $standard-lineheight: 3.5rem;
 $nav-item-size: 1.6rem;

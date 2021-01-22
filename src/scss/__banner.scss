@@ -1,0 +1,110 @@
+$standard-lineheight: 3.5rem;
+$nav-item-size: 1.6rem;
+$backgroundColor: (
+    "title": #2b2b2b,
+    "icon": #ff8570be,
+    "sub": #303030,
+    "main": #2b2b2b,
+    "footerColor": #ecd9bd,
+);
+
+.banner-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    // background-image: linear-gradient(#ffbfc459, rgba(163, 143, 116, 0.705)),
+    //     url("https://images.pexels.com/photos/1028704/pexels-photo-1028704.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-image: linear-gradient(
+            to right,
+            #ffbfc4c0,
+            rgba(163, 143, 116, 0.185)
+        ),
+        url("https://images.pexels.com/photos/1028704/pexels-photo-1028704.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-contents {
+    position: absolute;
+    left: 8%;
+    top: 15%;
+    text-align: left;
+    width: auto;
+
+    span {
+        display: block;
+    }
+
+    h1,
+    h3 {
+        text-transform: capitalize;
+        font-size: 8rem;
+        color: white;
+    }
+
+    #left {
+        animation: inFromLeft 2s ease;
+    }
+
+    #right {
+        animation: inFromRight 2s ease;
+    }
+
+    @keyframes inFromLeft {
+        0% {
+            transform: translateX(-20px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes inFromRight {
+        0% {
+            transform: translateX(20px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .banner-contents {
+    }
+    #bannerSubTitle {
+        color: white;
+        font-size: 1.8rem;
+        margin: 1rem 1rem 1rem 0;
+    }
+
+    #bannerTitle {
+        margin: 0;
+    }
+}
+
+.btn {
+    margin-top: 1rem;
+    padding: 1.4rem 2.5rem;
+    background-color: map-get($map: $backgroundColor, $key: icon);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.3rem;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        cursor: pointer;
+        background-color: lighten(
+            map-get($map: $backgroundColor, $key: icon),
+            5%
+        );
+    }
+
+    &:focus {
+        background-color: map-get($map: $backgroundColor, $key: icon);
+    }
+}

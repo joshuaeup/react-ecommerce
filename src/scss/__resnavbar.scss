@@ -1,0 +1,64 @@
+$standard-lineheight: 3.5rem;
+$nav-item-size: 1.6rem;
+$backgroundColor: (
+    "title": #2b2b2b,
+    "icon": #fc8c79,
+    "sub": #303030,
+    "main": #2b2b2b,
+    "btn": #6372f5,
+    "footerColor": #ecd9bd,
+);
+
+/* Responsive Nav  */
+
+#responsive-nav {
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background-color: #323233;
+    animation-name: displayHeight;
+    animation-duration: 0.8s;
+    text-align: center;
+}
+
+.responsive-nav__input {
+    height: 3vh;
+    width: 90%;
+    margin: 3rem 0 0 0;
+    border: none;
+    padding: 1.3em;
+    border-radius: 7px;
+}
+
+.responsive-nav__bottomLine {
+    border-color: gray;
+    border-width: 0.5px;
+}
+
+.responsive-nav__link {
+    display: block;
+    position: relative;
+    color: #d6d6d6;
+    font-size: 1.1rem;
+    text-align: start;
+    margin: 1rem 0 1rem 3rem;
+    text-decoration: none;
+}
+
+.responsive-nav__link__bottomLine {
+    border-color: gray;
+    border-width: 0.5px;
+    width: 80%;
+}
+
+@keyframes displayHeight {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 100vh;
+    }
+}
