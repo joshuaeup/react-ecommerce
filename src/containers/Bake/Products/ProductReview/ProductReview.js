@@ -1,7 +1,4 @@
 import React, { useEffect } from "react";
-import Aux from "../../../../hoc/Aux/Aux";
-import Navigation from "../../../../components/Navigation/Navigation";
-import Footer from "../../../../components/Footer/Footer";
 import { Link } from "react-router-dom";
 
 const ProductReview = (props) => {
@@ -9,8 +6,7 @@ const ProductReview = (props) => {
         window.scrollTo(0, 0);
     }, []);
     return (
-        <Aux>
-            <Navigation />
+        <>
             <header className="product-header">
                 <div className="product-dual-column">
                     <h2 className="product-grid-title">
@@ -65,8 +61,7 @@ const ProductReview = (props) => {
                     </div>
                 </div>
             </div>
-            <Footer />
-        </Aux>
+        </>
     );
 };
 

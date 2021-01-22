@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import CartSummary from "./CartSummary/CartSummary";
-import Navigation from "../../../components/Navigation/Navigation";
-import Footer from "../../../components/Footer/Footer";
 import CartItems from "./CartItems/CartItems";
 import { Link } from "react-router-dom";
 
@@ -60,7 +58,7 @@ class Cart extends Component {
             );
         } else {
             layout = (
-                <div>
+                <>
                     <header className="cart-header">
                         <div className="header-row">
                             <h2 className="header-title">
@@ -96,17 +94,11 @@ class Cart extends Component {
                             checkout={this.checkoutHandler}
                         />
                     </main>
-                </div>
+                </>
             );
         }
 
-        return (
-            <div>
-                <Navigation />
-                {layout}
-                <Footer />
-            </div>
-        );
+        return <>{layout}</>;
     }
 }
 

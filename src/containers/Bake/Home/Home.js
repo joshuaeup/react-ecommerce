@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import Navigation from "../../../components/Navigation/Navigation";
-import Footer from "../../../components/Footer/Footer";
 import { Link } from "react-router-dom";
 import MostPopular from "./MostPopular/MostPopular";
 import ImageSlider from "../../../components/ImageSlider/ImageSlider";
@@ -14,8 +12,6 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <Navigation />
-
                 <header className="header">
                     <div className="banner-container">
                         <div className="banner-contents">
@@ -121,7 +117,6 @@ class Home extends Component {
                         <ImageSlider slides={SliderData} />
                     </div> */}
                 </main>
-                <Footer />
             </div>
         );
     }

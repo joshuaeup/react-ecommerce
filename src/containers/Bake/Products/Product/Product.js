@@ -1,7 +1,4 @@
 import React, { Component } from "react";
-import Aux from "../../../../hoc/Aux/Aux";
-import Navigation from "../../../../components/Navigation/Navigation";
-import Footer from "../../../../components/Footer/Footer";
 import Customizations from "../../../../components/Customizations/Customizations";
 
 class Product extends Component {
@@ -16,8 +13,7 @@ class Product extends Component {
 
     render() {
         return (
-            <Aux>
-                <Navigation />
+            <>
                 <header className="product-header">
                     <div className="product-dual-column">
                         <h2 className="product-grid-title">
@@ -87,8 +83,7 @@ class Product extends Component {
                         </div>
                     </div>
                 </main>
-                <Footer />
-            </Aux>
+            </>
         );
     }
 }

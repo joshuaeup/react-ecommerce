@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Customization from "./Customization/Customization";
-// import Aux from "../../hoc/Aux/Aux";
 import { Link } from "react-router-dom";
 const customizations = [
     {

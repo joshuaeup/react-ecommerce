@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 // Components
-import Navigation from "../../../components/Navigation/Navigation";
 import ProductsComponent from "../../../components/Products/Products";
-import Footer from "../../../components/Footer/Footer";
 
 class Products extends Component {
     state = {
@@ -69,8 +67,7 @@ class Products extends Component {
 
     render() {
         return (
-            <div>
-                <Navigation />
+            <>
                 <main id="main" style={{ paddingBottom: "0" }}>
                     <h2
                         className="home-grid-container__title"
@@ -128,8 +125,7 @@ class Products extends Component {
                         })}
                     </div>
                 </main>
-                <Footer />
-            </div>
+            </>
         );
     }
 }

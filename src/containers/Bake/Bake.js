@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Aux from "../../hoc/Aux/Aux";
 // Imported to allow routing
 import { Route } from "react-router-dom";
 // Containers
@@ -12,6 +11,10 @@ import ProductReview from "./Products/ProductReview/ProductReview";
 // Data
 import data from "../../data.json";
 import topSellers from "../../topSellers.json";
+// Components
+import Navigation from "../../components/Navigation/Navigation";
+import SideNav from "../../components/Navigation/SideNav/SideNav";
+import Footer from "../../components/Footer/Footer";
 
 const sweets = [...data.cupcake, ...data.cookie, ...data.pie];
 const topSellingSweets = [...topSellers.topSellers];
@@ -22,6 +25,7 @@ class Bake extends Component {
         topSellers: topSellingSweets,
         cart: [],
         configurations: [],
+        showSideNav: false,
     };
 
     // Method to find category and use param to find type
@@ -97,9 +101,29 @@ class Bake extends Component {
         return word.charAt(0).toUpperCase() + word.slice(1);
     };
 
+    sideNavToggleHandler = () => {
+        this.setState((prevState) => {
+            return { showSideNav: !prevState.showSideNav };
+        });
+    };
+
+    closeSideNavHandler = () => {
+        this.setState({
+            showSideNav: false,
+        });
+    };
+
     render() {
         return (
-            <Aux>
+            <>
+                <Navigation
+                    open={this.state.showSideNav}
+                    toggle={this.sideNavToggleHandler}
+                />
+                <SideNav
+                    open={this.state.showSideNav}
+                    close={this.closeSideNavHandler}
+                />
                 {/* Route used to specify what to render at each path */}
                 <Route
                     path="/"
@@ -166,7 +190,8 @@ class Bake extends Component {
                         />
                     )}
                 />
-            </Aux>
+                <Footer />
+            </>
         );
     }
 }

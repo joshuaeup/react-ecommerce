@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import Footer from "../../../components/Footer/Footer";
-import Navigation from "../../../components/Navigation/Navigation";
 
 class Contact extends Component {
     componentDidMount() {
@@ -9,7 +7,6 @@ class Contact extends Component {
     render() {
         return (
             <>
-                <Navigation />
                 <main id="padded-main">
                     <div className="two-grid-container">
                         <h2 className="contact-grid-container__title">
@@ -107,7 +104,6 @@ class Contact extends Component {
                         </div>
                     </div>
                 </main>
-                <Footer />
             </>
         );
     }

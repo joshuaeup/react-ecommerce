@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 // Imported to allow routing
 import { Link } from "react-router-dom";
-import Aux from "../../hoc/Aux/Aux";
 
 const capitalize = (word) => {
     return word.charAt(0).toUpperCase() + word.slice(1);
@@ -13,7 +12,7 @@ class Products extends Component {
 
         // console.log(this.props);
         return (
-            <Aux>
+            <>
                 <Link to={route}>
                     <article className="product-grid-container__column">
                         <div className="product-grid-item-img">
@@ -48,7 +47,7 @@ class Products extends Component {
                         </div>
                     </article>
                 </Link>
-            </Aux>
+            </>
         );
     }
 }

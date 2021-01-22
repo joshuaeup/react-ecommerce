@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Aux from "../../../../hoc/Aux/Aux";
 
 class MostPopular extends Component {
     render() {
@@ -8,7 +7,7 @@ class MostPopular extends Component {
             "/products/" + this.props.item.type + "/" + this.props.item.name;
 
         return (
-            <Aux>
+            <>
                 <Link to={route}>
                     <article className="product-grid-container__column">
                         <div className="product-grid-item-img">
@@ -49,7 +48,7 @@ class MostPopular extends Component {
                         </div>
                     </article>
                 </Link>
-            </Aux>
+            </>
         );
     }
 }

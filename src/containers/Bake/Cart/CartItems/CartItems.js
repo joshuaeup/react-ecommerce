@@ -1,10 +1,9 @@
 import React from "react";
-import Aux from "../../../../hoc/Aux/Aux";
 import CartItem from "../CartItem/CartItem";
 
 const CartItems = (props) => {
     return (
-        <Aux>
+        <>
             {props.items.map((item, index) => {
                 return (
                     <CartItem
@@ -19,7 +18,7 @@ const CartItems = (props) => {
                     />
                 );
             })}
-        </Aux>
+        </>
     );
 };
 
