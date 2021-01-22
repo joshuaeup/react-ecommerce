@@ -457,9 +457,6 @@
   grid-template-columns: 1fr;
   grid-auto-rows: min-content;
 }
-.contact-column .contact-column__link__container :nth-child(1) {
-  background-color: #45271f;
-}
 .contact-column .contact-column__link__container :nth-child(2) {
   color: #45271f;
 }
@@ -484,6 +481,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-columns: 5px;
+  margin-bottom: 1rem;
 }
 .contact-column .input-container .input-container__label {
   margin: 0.5rem 0;
@@ -533,6 +531,7 @@
 #padded-main {
   padding: 1rem 7rem 7rem 7rem;
   width: 100%;
+  min-height: 70vh;
 }
 #padded-main .underline {
   background-color: #45271f;

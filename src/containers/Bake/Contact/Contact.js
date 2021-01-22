@@ -2,7 +2,8 @@ import React, { Component } from "react";
 
 class Contact extends Component {
     state = {
-        inputType: "",
+        inputType: "feedback",
+        active: true,
     };
     componentDidMount() {
         window.scrollTo(0, 0);
@@ -19,6 +20,11 @@ class Contact extends Component {
         );
     };
 
+    formSubmitHandler = (e) => {
+        e.preventDefault();
+        alert("Feature Coming Soon");
+    };
+
     render() {
         return (
             <>
@@ -33,10 +39,15 @@ class Contact extends Component {
                                     <label className="text__wrapper">
                                         Feedback
                                         <input
+                                            required
                                             className="input"
                                             type="radio"
                                             name="form-input"
                                             value="feedback"
+                                            checked={
+                                                this.state.inputType ==
+                                                    "feedback" && true
+                                            }
                                             onChange={this.onChangeHandler}
                                         />
                                         <div className="radio-overlay"></div>
@@ -48,10 +59,15 @@ class Contact extends Component {
                                     <label className="text__wrapper">
                                         General Inquiry
                                         <input
+                                            required
                                             className="input"
                                             type="radio"
                                             name="form-input"
                                             value="general"
+                                            checked={
+                                                this.state.inputType ==
+                                                    "general" && true
+                                            }
                                             onChange={this.onChangeHandler}
                                         />
                                         <div className="radio-overlay"></div>
@@ -62,175 +78,164 @@ class Contact extends Component {
                         <div className="contact-column">
                             {this.state.inputType == "feedback" && (
                                 <>
-                                    <div className="input-container">
-                                        <label
-                                            className="input-container__label"
-                                            htmlFor="fname"
-                                        >
-                                            First Name
-                                        </label>
-                                        <input
-                                            className="input-container__field"
-                                            placeholder="First Name"
-                                            id="fname"
-                                            type="text"
-                                        />
-                                    </div>
-                                    <div className="input-container">
-                                        <label
-                                            className="input-container__label"
-                                            htmlFor="lname"
-                                        >
-                                            Last Name
-                                        </label>
-                                        <input
-                                            className="input-container__field"
-                                            placeholder="Last Name"
-                                            id="lname"
-                                            type="text"
-                                        />
-                                    </div>
-                                    <div className="input-container">
-                                        <label
-                                            className="input-container__label"
-                                            htmlFor="email"
-                                        >
-                                            Email
-                                        </label>
-                                        <input
-                                            className="input-container__field"
-                                            placeholder="Email Address"
-                                            id="email"
-                                            type="email"
-                                        />
-                                    </div>
-                                    <div className="input-container">
-                                        <label
-                                            className="input-container__label"
-                                            htmlFor="number"
-                                        >
-                                            Phone #
-                                        </label>
-                                        <input
-                                            className="input-container__field"
-                                            placeholder="(555) 555 5555"
-                                            id="number"
-                                            type="number"
-                                        />
-                                    </div>
-                                    <div className="input-container">
-                                        <label
-                                            className="input-container__label"
-                                            htmlFor="comment"
-                                        >
-                                            What's on your mind?
-                                        </label>
-                                        <textarea
-                                            className="input-container__field"
-                                            placeholder="Comments"
-                                            id="comment"
-                                            type="text"
-                                        ></textarea>
-                                    </div>
-                                    <div className="input-container">
-                                        <input
-                                            className="input-container__field"
-                                            id="submit"
-                                            type="submit"
-                                            value="Submit"
-                                        />
-                                    </div>
+                                    <form onSubmit={this.formSubmitHandler}>
+                                        <div className="input-container">
+                                            <label
+                                                className="input-container__label"
+                                                htmlFor="fname"
+                                            >
+                                                First Name
+                                            </label>
+                                            <input
+                                                required
+                                                className="input-container__field"
+                                                placeholder="First Name"
+                                                id="fname"
+                                                type="text"
+                                            />
+                                        </div>
+                                        <div className="input-container">
+                                            <label
+                                                className="input-container__label"
+                                                htmlFor="lname"
+                                            >
+                                                Last Name
+                                            </label>
+                                            <input
+                                                required
+                                                className="input-container__field"
+                                                placeholder="Last Name"
+                                                id="lname"
+                                                type="text"
+                                            />
+                                        </div>
+                                        <div className="input-container">
+                                            <label
+                                                className="input-container__label"
+                                                htmlFor="email"
+                                            >
+                                                Email
+                                            </label>
+                                            <input
+                                                required
+                                                className="input-container__field"
+                                                placeholder="Email Address"
+                                                id="email"
+                                                type="email"
+                                            />
+                                        </div>
+                                        <div className="input-container">
+                                            <label
+                                                className="input-container__label"
+                                                htmlFor="number"
+                                            >
+                                                Phone #
+                                            </label>
+                                            <input
+                                                required
+                                                className="input-container__field"
+                                                placeholder="(555) 555 5555"
+                                                id="number"
+                                                type="number"
+                                            />
+                                        </div>
+                                        <div className="input-container">
+                                            <label
+                                                className="input-container__label"
+                                                htmlFor="comment"
+                                            >
+                                                What's on your mind?
+                                            </label>
+                                            <textarea
+                                                className="input-container__field"
+                                                placeholder="Comments"
+                                                id="comment"
+                                                type="text"
+                                            ></textarea>
+                                        </div>
+                                        <div className="input-container">
+                                            <input
+                                                className="input-container__field"
+                                                id="submit"
+                                                type="submit"
+                                                value="Submit"
+                                            />
+                                        </div>
+                                    </form>
                                 </>
                             )}
                             {this.state.inputType === "general" && (
                                 <>
-                                    <div className="input-container">
-                                        <label
-                                            className="input-container__label"
-                                            htmlFor="fname"
-                                        >
-                                            First Name
-                                        </label>
-                                        <input
-                                            className="input-container__field"
-                                            placeholder="First Name"
-                                            id="fname"
-                                            type="text"
-                                        />
-                                    </div>
-                                    <div className="input-container">
-                                        <label
-                                            className="input-container__label"
-                                            htmlFor="lname"
-                                        >
-                                            Last Name
-                                        </label>
-                                        <input
-                                            className="input-container__field"
-                                            placeholder="Last Name"
-                                            id="lname"
-                                            type="text"
-                                        />
-                                    </div>
-                                    <div className="input-container">
-                                        <label
-                                            className="input-container__label"
-                                            htmlFor="email"
-                                        >
-                                            Email
-                                        </label>
-                                        <input
-                                            className="input-container__field"
-                                            placeholder="Email Address"
-                                            id="email"
-                                            type="email"
-                                        />
-                                    </div>
-                                    <div className="input-container">
-                                        <label
-                                            className="input-container__label"
-                                            htmlFor="comment"
-                                        >
-                                            What's on your mind?
-                                        </label>
-                                        <textarea
-                                            className="input-container__field"
-                                            placeholder="Comments"
-                                            id="comment"
-                                            type="text"
-                                        ></textarea>
-                                    </div>
-                                    <div className="input-container">
-                                        <input
-                                            className="input-container__field"
-                                            id="submit"
-                                            type="submit"
-                                            value="Submit"
-                                        />
-                                    </div>
-                                </>
-                            )}
-
-                            {this.state.inputType === "" && (
-                                <>
-                                    <h2
-                                        className="contact-grid-container__title"
-                                        style={{
-                                            textAlign: "center",
-                                            fontSize: "2.5rem",
-                                        }}
-                                    >
-                                        Greetings!
-                                    </h2>
-                                    <h2
-                                        className="contact-grid-container__title"
-                                        style={{
-                                            textAlign: "center",
-                                            fontSize: "2.2rem",
-                                        }}
-                                    >
-                                        Select Contact Reason
-                                    </h2>
+                                    <form onSubmit={this.formSubmitHandler}>
+                                        <div className="input-container">
+                                            <label
+                                                className="input-container__label"
+                                                htmlFor="fname"
+                                            >
+                                                First Name
+                                            </label>
+                                            <input
+                                                required
+                                                className="input-container__field"
+                                                placeholder="First Name"
+                                                id="fname"
+                                                type="text"
+                                            />
+                                        </div>
+                                        <div className="input-container">
+                                            <label
+                                                className="input-container__label"
+                                                htmlFor="lname"
+                                            >
+                                                Last Name
+                                            </label>
+                                            <input
+                                                required
+                                                className="input-container__field"
+                                                placeholder="Last Name"
+                                                id="lname"
+                                                type="text"
+                                            />
+                                        </div>
+                                        <div className="input-container">
+                                            <label
+                                                className="input-container__label"
+                                                htmlFor="email"
+                                            >
+                                                Email
+                                            </label>
+                                            <input
+                                                required
+                                                className="input-container__field"
+                                                placeholder="Email Address"
+                                                id="email"
+                                                type="email"
+                                            />
+                                        </div>
+                                        <div className="input-container">
+                                            <label
+                                                className="input-container__label"
+                                                htmlFor="comment"
+                                            >
+                                                What's on your mind?
+                                            </label>
+                                            <textarea
+                                                required
+                                                className="input-container__field"
+                                                placeholder="Comments"
+                                                id="comment"
+                                                type="text"
+                                            ></textarea>
+                                        </div>
+                                        <div className="input-container">
+                                            <input
+                                                className="input-container__field"
+                                                id="submit"
+                                                type="submit"
+                                                value="Submit"
+                                            />
+                                        </div>
+                                    </form>
                                 </>
                             )}
                         </div>
