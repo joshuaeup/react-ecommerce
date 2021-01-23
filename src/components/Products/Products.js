@@ -28,6 +28,7 @@ class Products extends Component {
                                     {capitalize(this.props.name)}{" "}
                                     {capitalize(this.props.type)}
                                 </p>
+                                <p>{this.props.size}</p>
                             </div>
                             {/* <div className="product-grid-item">
                                 <span>

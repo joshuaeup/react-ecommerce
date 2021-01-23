@@ -12,11 +12,6 @@ const cupcakeCustomizations = [
         optionOne: "Half A Dozen",
         optionTwo: "A Dozen",
     },
-    {
-        type: "Filling Flavor",
-        optionOne: "Strawberry",
-        optionTwo: "Vanilla",
-    },
 ];
 const pieCustomizations = [
     {
@@ -25,18 +20,13 @@ const pieCustomizations = [
         optionTwo: "No",
     },
     {
-        type: "Filling Flavor",
-        optionOne: "Strawberry",
-        optionTwo: "Vanilla",
+        type: "Crust Type",
+        optionOne: "Gram Cracker",
+        optionTwo: "Classic",
     },
 ];
 
 const cookieCustomizations = [
-    {
-        type: "Icing Flavor",
-        optionOne: "Vanilla",
-        optionTwo: "Strawberry",
-    },
     {
         type: "Collection Size",
         optionOne: "Half A Dozen",
@@ -46,6 +36,19 @@ const cookieCustomizations = [
         type: "Sprinkles",
         optionOne: "Yes",
         optionTwo: "No",
+    },
+];
+
+const cheesecakeCustomizations = [
+    {
+        type: "Icing Flavor",
+        optionOne: "Vanilla",
+        optionTwo: "Strawberry",
+    },
+    {
+        type: "Collection Size",
+        optionOne: "Half A Dozen",
+        optionTwo: "A Dozen",
     },
 ];
 
@@ -69,6 +72,10 @@ class Customizations extends Component {
         } else if (this.props.type === "cookie") {
             this.setState({
                 customizations: cookieCustomizations,
+            });
+        } else if (this.props.type === "cheesecake") {
+            this.setState({
+                customizations: cheesecakeCustomizations,
             });
         }
     }

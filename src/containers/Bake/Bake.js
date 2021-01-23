@@ -16,7 +16,12 @@ import Navigation from "../../components/Navigation/Navigation";
 import SideNav from "../../components/Navigation/SideNav/SideNav";
 import Footer from "../../components/Footer/Footer";
 
-const sweets = [...data.cupcake, ...data.cookie, ...data.pie];
+const sweets = [
+    ...data.cupcake,
+    ...data.cookie,
+    ...data.pie,
+    ...data.cheesecake,
+];
 const topSellingSweets = [...topSellers.topSellers];
 
 class Bake extends Component {

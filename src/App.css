@@ -62,7 +62,7 @@
 .btn {
   margin-top: 1rem;
   padding: 1.4rem 2.5rem;
-  background-color: #ff8570be;
+  background-color: #ff816b;
   color: white;
   border: none;
   border-radius: 15px;
@@ -71,10 +71,10 @@
 }
 .btn:hover {
   cursor: pointer;
-  background-color: rgba(255, 155, 138, 0.7450980392);
+  background-color: #ff9785;
 }
 .btn:focus {
-  background-color: #ff8570be;
+  background-color: #ff816b;
 }
 
 .header {

@@ -34,6 +34,9 @@ class Navigation extends Component {
                             <Link to="/products/cookie">
                                 <li>Cookies</li>
                             </Link>
+                            <Link to="/products/cheesecake">
+                                <li>Cheesecake</li>
+                            </Link>
                         </ul>
                     </div>
 

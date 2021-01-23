@@ -15,10 +15,10 @@ const Footer = () => {
                     <i className="footer-social__icon fab fa-youtube"></i>
                 </a>
                 <a className="footer-social__icon__link" href="/">
-                    <i className="footer-social__icon fab fa-youtube"></i>
+                    <i className="footer-social__icon fab fa-instagram"></i>
                 </a>
                 <a className="footer-social__icon__link" href="/">
-                    <i className="footer-social__icon fab fa-youtube"></i>
+                    <i className="footer-social__icon fab fa-twitter"></i>
                 </a>
             </div>
             <ul className="footer-link-list">
@@ -34,7 +34,7 @@ const Footer = () => {
                 </li>
                 <li className="footer-link">
                     <a className="link" href="/">
-                        Blog
+                        Item
                     </a>
                 </li>
                 <li className="footer-link four">

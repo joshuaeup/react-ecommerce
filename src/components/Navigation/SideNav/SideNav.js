@@ -32,6 +32,11 @@ const SideNav = (props) => {
                         Cookies
                     </li>
                 </Link>
+                <Link to="/products/cheesecake">
+                    <li onClick={props.close} className="sideNav__list__item">
+                        Cheesecake
+                    </li>
+                </Link>
                 <Link to="/contact">
                     <li onClick={props.close} className="sideNav__list__item">
                         Contact

@@ -1,10 +1,10 @@
 {
     "topSellers": [
         {
-            "image": "https://i.pinimg.com/originals/51/72/49/517249fbf8a54e6c26b3e06080593bb2.png",
-            "type": "cupcake",
-            "name": "birthday",
-            "reviews": 18,
+            "image": "https://lh3.googleusercontent.com/proxy/7a2QKvVVq4kei2LVFuPrzdMoD-k1rDlqLB7B06E0Tl7pALo47yDqto00bb3BxFGdX_O2caGDDMV94hvxcyROKETbJHgysXQeFRwcI19DIjRufMxSSr949ZoZv5hoqSkZ",
+            "type": "cheesecake",
+            "name": "chocolate",
+            "reviews": 19,
             "ratings": [
                 {
                     "one": 0
@@ -22,13 +22,14 @@
                     "five": 2
                 }
             ],
-            "price": 6.99
+            "price": 19.99
         },
         {
-            "image": "https://cdn.picpng.com/cookie/pattern-cookie-26888.png",
+            "image": "https://www.transparentpng.com/thumb/cookie/cookie-png-5.png",
             "type": "cookie",
-            "name": "ginger",
-            "reviews": 19,
+            "name": "chocolate Chip",
+            "size": "Half A Dozen",
+            "reviews": 18,
             "ratings": [
                 {
                     "one": 0
@@ -49,57 +50,10 @@
             "price": 3.99
         },
         {
-            "image": "https://d3gg7p8kl1yfy0.cloudfront.net/detail_bb_Key_Lime_Pie.png?mtime=20160106221137&focal=none",
-            "type": "pie",
-            "name": "keylime",
-            "reviews": 18,
-            "ratings": [
-                {
-                    "one": 0
-                },
-                {
-                    "two": 0
-                },
-                {
-                    "three": 0
-                },
-                {
-                    "four": 0
-                },
-                {
-                    "five": 2
-                }
-            ],
-            "price": 2.99
-        },
-        {
-            "image": "https://0bb8856ba8259ec33e3d-a40599a114f3a4c6d0979c3ffe0b2bf5.ssl.cf2.rackcdn.com/0263601000000_CL_hyvee_default_large.png",
-            "type": "pie",
-            "name": "peach",
-            "reviews": 18,
-            "ratings": [
-                {
-                    "one": 0
-                },
-                {
-                    "two": 0
-                },
-                {
-                    "three": 0
-                },
-                {
-                    "four": 0
-                },
-                {
-                    "five": 2
-                }
-            ],
-            "price": 2.99
-        },
-        {
-            "image": "https://www.pngkey.com/png/full/7-77025_galaxy-cupcakes-square-png-picture-galaxy-cupcakes-the.png",
+            "image": "https://lh3.googleusercontent.com/proxy/K3IoK5IRnignwkuini30WhGpeNazIQVZ5PaGz0QPB8oVigSQ1HceB-LnDP-R56cU6xH6yuA81WPFuJ0k0eQ8fInf9wyuxtdZDlwWmMlXDf6qj_4z8plwz63cCd4wFObeA67fvjlgdmiJFnr3IRkF-3CW9Jad6jdcK_qnZ494e9txJg",
             "type": "cupcake",
-            "name": "galaxy",
+            "name": "red Velvet",
+            "size": "Half A Dozen",
             "reviews": 18,
             "ratings": [
                 {
@@ -115,10 +69,60 @@
                     "four": 0
                 },
                 {
-                    "five": 8
+                    "five": 6
                 }
             ],
-            "price": 6.99
+            "price": 10.99
+        },
+        {
+            "image": "https://cdn.shopify.com/s/files/1/0358/0061/3001/products/Snickerdoodle_1280x.png?v=1595366633",
+            "type": "cookie",
+            "name": "snickerdoodle",
+            "size": "Half A Dozen",
+            "reviews": 19,
+            "ratings": [
+                {
+                    "one": 0
+                },
+                {
+                    "two": 0
+                },
+                {
+                    "three": 0
+                },
+                {
+                    "four": 0
+                },
+                {
+                    "five": 2
+                }
+            ],
+            "price": 5.99
+        },
+
+        {
+            "image": "https://assets.stickpng.com/thumbs/5c507756bb7e2a029589d251.png",
+            "type": "cheesecake",
+            "name": "strawberry",
+            "reviews": 19,
+            "ratings": [
+                {
+                    "one": 0
+                },
+                {
+                    "two": 0
+                },
+                {
+                    "three": 0
+                },
+                {
+                    "four": 0
+                },
+                {
+                    "five": 2
+                }
+            ],
+            "price": 21.99
         }
     ]
 }
