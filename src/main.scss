@@ -43,7 +43,7 @@ body {
         .product-grid-container__column
         .product-grid-item-img {
         height: 20rem;
-        width: 10rem;
+        width: 15rem;
     }
 
     // PRODUCTS CLOSE
@@ -94,6 +94,11 @@ body {
         top: 4rem;
     }
     // HOME CLOSE
+    // PRODUCTS OPEN
+    #main #six-grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    // PRODUCTS CLOSE
     // PRODUCT OPEN
     .product-header {
         padding: 0 3rem;
@@ -191,12 +196,8 @@ body {
         #six-grid-container
         .product-grid-container__column
         .product-grid-item-img {
-        height: 12rem;
-        width: 2rem;
-    }
-
-    #main #six-grid-container {
-        grid-template-columns: 1fr 1fr;
+        height: 15rem;
+        width: 10rem;
     }
 
     // PRODUCTS CLOSE
