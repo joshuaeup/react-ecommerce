@@ -8,6 +8,7 @@ class Products extends Component {
         direction: "high",
         message: "",
     };
+
     componentDidMount() {
         window.scrollTo(0, 0);
     }
