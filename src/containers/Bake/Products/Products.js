@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 // Components
 import ProductsComponent from "../../../components/Products/Products";
 
@@ -47,7 +48,6 @@ class Products extends Component {
                     this.setState({
                         data: this.props.data.sort(this.compare),
                     });
-                    // console.log("Sort starting with low prices");
                 }
             );
         } else {
@@ -85,30 +85,60 @@ class Products extends Component {
                         style={{ backgroundColor: "white" }}
                     >
                         <p>{this.props.data.length} results found</p>
-                        {/* <p>Sort By: Price: High to Low</p> */}
-                        <div className="dropdown-nav__container main-nav__link">
-                            <span>
-                                <p>
-                                    Sort By: Price: {this.state.message}{" "}
-                                    <i className="fas fa-chevron-down"></i>
-                                </p>
-                            </span>
-                            <ul id="dropdown">
-                                <li
-                                    onClick={() =>
-                                        this.sortByPriceHandler("high")
-                                    }
-                                >
-                                    High to Low
-                                </li>
-                                <li
-                                    onClick={() =>
-                                        this.sortByPriceHandler("low")
-                                    }
-                                >
-                                    Low to High
-                                </li>
-                            </ul>
+                        <div>
+                            <div className="dropdown-nav__container main-nav__link">
+                                <span>
+                                    <p>
+                                        Sort By Product Type:{" "}
+                                        {this.props.type
+                                            ? this.props.capitalize(
+                                                  this.props.type
+                                              )
+                                            : null}{" "}
+                                        <i className="fas fa-chevron-down"></i>
+                                    </p>
+                                </span>
+                                <ul id="dropdown">
+                                    <Link to="/products/cupcake">
+                                        <li>Cupcakes</li>
+                                    </Link>
+                                    <Link to="/products/pie">
+                                        <li>Pies</li>
+                                    </Link>
+
+                                    <Link to="/products/cookie">
+                                        <li>Cookies</li>
+                                    </Link>
+
+                                    <Link to="/products/cheesecake">
+                                        <li>Cheesecakes</li>
+                                    </Link>
+                                </ul>
+                            </div>
+                            <div className="dropdown-nav__container main-nav__link">
+                                <span>
+                                    <p>
+                                        Sort By: Price: {this.state.message}{" "}
+                                        <i className="fas fa-chevron-down"></i>
+                                    </p>
+                                </span>
+                                <ul id="dropdown">
+                                    <li
+                                        onClick={() =>
+                                            this.sortByPriceHandler("high")
+                                        }
+                                    >
+                                        High to Low
+                                    </li>
+                                    <li
+                                        onClick={() =>
+                                            this.sortByPriceHandler("low")
+                                        }
+                                    >
+                                        Low to High
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <hr

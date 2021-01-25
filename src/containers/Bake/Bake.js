@@ -178,6 +178,7 @@ class Bake extends Component {
                         <Products
                             data={this.findCategory(props.match.params.type)}
                             capitalize={this.capitalize}
+                            type={props.match.params.type}
                         />
                     )}
                 />

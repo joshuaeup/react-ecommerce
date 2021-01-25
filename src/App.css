@@ -611,11 +611,16 @@
   transition: all 2s;
   list-style: none;
 }
+#main #products-sort-container .dropdown-nav__container #dropdown a,
+#main #products-banner .dropdown-nav__container #dropdown a {
+  text-decoration: none;
+}
 #main #products-sort-container .dropdown-nav__container #dropdown li,
 #main #products-banner .dropdown-nav__container #dropdown li {
   margin: 0 1rem;
   padding: 1rem 0;
   border-bottom: 1px solid #e2ded6;
+  color: #452720;
 }
 #main #products-sort-container .dropdown-nav__container #dropdown :nth-child(2),
 #main #products-banner .dropdown-nav__container #dropdown :nth-child(2) {

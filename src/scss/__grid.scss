@@ -285,8 +285,7 @@ $backgroundColor: (
                 display: none;
                 position: absolute;
                 right: 0;
-                // left: 50%;
-                // transform: translateX(-50%);
+
                 background-color: white;
                 width: 10rem;
                 box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -296,10 +295,15 @@ $backgroundColor: (
                 transition: all 2s;
                 list-style: none;
 
+                a {
+                    text-decoration: none;
+                }
+
                 li {
                     margin: 0 1rem;
                     padding: 1rem 0;
                     border-bottom: 1px solid #e2ded6;
+                    color: #452720;
                 }
 
                 :nth-child(2) {
