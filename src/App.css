@@ -415,8 +415,8 @@
 .home-mostPopular-container #mostPopular__grid__container .product-grid-container__column .product-grid-item-img .grid-img {
   justify-self: center;
   align-self: center;
-  width: auto;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
 }
 .home-mostPopular-container #mostPopular__grid__container .product-grid-container__column .product-grid-desc {
   height: auto;
