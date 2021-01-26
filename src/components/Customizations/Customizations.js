@@ -12,6 +12,11 @@ const cupcakeCustomizations = [
         optionOne: "Half A Dozen",
         optionTwo: "A Dozen",
     },
+    {
+        type: "Sprinkles",
+        optionOne: "Chocolate",
+        optionTwo: "Vanilla",
+    },
 ];
 const pieCustomizations = [
     {
@@ -32,23 +37,13 @@ const cookieCustomizations = [
         optionOne: "Half A Dozen",
         optionTwo: "A Dozen",
     },
-    {
-        type: "Sprinkles",
-        optionOne: "Yes",
-        optionTwo: "No",
-    },
 ];
 
 const cheesecakeCustomizations = [
     {
-        type: "Icing Flavor",
-        optionOne: "Vanilla",
-        optionTwo: "Strawberry",
-    },
-    {
-        type: "Collection Size",
-        optionOne: "Half A Dozen",
-        optionTwo: "A Dozen",
+        type: "Crust Type",
+        optionOne: "Gram Cracker",
+        optionTwo: "Classic",
     },
 ];
 
