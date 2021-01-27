@@ -23,6 +23,27 @@ class Contact extends Component {
 
     formSubmitHandler = (e) => {
         e.preventDefault();
+        let fname = document.forms["feedback"]["fname"].value;
+        let lname = document.forms["feedback"]["lname"].value;
+        let email = document.forms["feedback"]["email"].value;
+        let number = document.forms["feedback"]["number"].value;
+
+        if (fname === " " || fname == null) {
+            alert("First Name is required");
+        }
+
+        if (lname === " " || lname == null) {
+            alert("Last Name is required");
+        }
+
+        if (email === " " || email == null) {
+            alert("Email is required");
+        }
+
+        if (number === " " || number == null) {
+            alert("Number is required");
+        }
+
         alert("Feature Coming Soon");
     };
 
@@ -79,7 +100,10 @@ class Contact extends Component {
                         <div className="contact-column">
                             {this.state.inputType === "feedback" && (
                                 <>
-                                    <form onSubmit={this.formSubmitHandler}>
+                                    <form
+                                        name="feedback"
+                                        onSubmit={this.formSubmitHandler}
+                                    >
                                         <div className="input-container">
                                             <label
                                                 className="input-container__label"
@@ -156,8 +180,6 @@ class Contact extends Component {
                                         </div>
                                         <div className="input-container">
                                             <input
-                                                className="input-container__field"
-                                                id="submit"
                                                 type="submit"
                                                 value="Submit"
                                             />
@@ -167,7 +189,10 @@ class Contact extends Component {
                             )}
                             {this.state.inputType === "general" && (
                                 <>
-                                    <form onSubmit={this.formSubmitHandler}>
+                                    <form
+                                        name="general"
+                                        onSubmit={this.formSubmitHandler}
+                                    >
                                         <div className="input-container">
                                             <label
                                                 className="input-container__label"
