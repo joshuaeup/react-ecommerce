@@ -39,30 +39,6 @@ class Product extends Component {
                                     alt={this.props.product.name}
                                     id="product-image"
                                 />
-                                {/* <div className="product-grid-item">
-                                    <div className="four-grid-container">
-                                        <img
-                                            src={this.props.product.image}
-                                            alt={this.props.product.name}
-                                            id="product-image"
-                                        />
-                                        <img
-                                            src={this.props.product.image}
-                                            alt={this.props.product.name}
-                                            id="product-image"
-                                        />
-                                        <img
-                                            src={this.props.product.image}
-                                            alt={this.props.product.name}
-                                            id="product-image"
-                                        />
-                                        <img
-                                            src={this.props.product.image}
-                                            alt={this.props.product.name}
-                                            id="product-image"
-                                        />
-                                    </div>
-                                </div> */}
                                 <hr
                                     className="divideLine"
                                     style={{ width: "80%" }}

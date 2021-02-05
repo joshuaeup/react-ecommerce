@@ -14,7 +14,10 @@ const Footer = () => {
                 <a className="footer-social__icon__link" href="/">
                     <i className="footer-social__icon fab fa-youtube"></i>
                 </a>
-                <a className="footer-social__icon__link" href="/">
+                <a
+                    className="footer-social__icon__link"
+                    href="https://www.instagram.com/bakedandbubbly/"
+                >
                     <i className="footer-social__icon fab fa-instagram"></i>
                 </a>
                 <a className="footer-social__icon__link" href="/">
