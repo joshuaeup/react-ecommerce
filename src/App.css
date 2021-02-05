@@ -221,7 +221,9 @@
 }
 .main-nav #main-nav__link__container .dropdown-nav__container #dropdown a:hover {
   cursor: pointer;
-  background-color: #fafafa;
+}
+.main-nav #main-nav__link__container .dropdown-nav__container #dropdown a:hover li {
+  background-color: #f2f2f2;
 }
 .main-nav #main-nav__link__container .dropdown-nav__container:hover #dropdown {
   display: block;

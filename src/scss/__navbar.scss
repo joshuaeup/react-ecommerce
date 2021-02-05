@@ -48,10 +48,13 @@ $backgroundColor: (
 
                 a:hover {
                     cursor: pointer;
-                    background-color: darken(
-                        map-get($map: $backgroundColor, $key: main),
-                        2px
-                    );
+
+                    li {
+                        background-color: darken(
+                            map-get($map: $backgroundColor, $key: main),
+                            5px
+                        );
+                    }
                 }
             }
         }

@@ -60,7 +60,6 @@ class Products extends Component {
                     this.setState({
                         data: this.props.data.sort(this.compare),
                     });
-                    // console.log("Sort starting with high prices");
                 }
             );
         }
