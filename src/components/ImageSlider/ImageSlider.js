@@ -56,9 +56,9 @@ const ImageSlider = ({ slides }) => {
                                         {slide.name}
                                     </h3>
                                     <p className="review-grid-text">
-                                        <i class="fas fa-quote-left"></i>{" "}
+                                        <i className="fas fa-quote-left"></i>{" "}
                                         {slide.message}{" "}
-                                        <i class="fas fa-quote-right"></i>
+                                        <i className="fas fa-quote-right"></i>
                                     </p>
                                 </>
                             )}
